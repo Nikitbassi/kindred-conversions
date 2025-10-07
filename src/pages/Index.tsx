@@ -118,12 +118,16 @@ const Index = () => {
                 <ValueStackItem title="50+ Worksheets & Action Plans" description="Practical exercises and templates to implement what you learn immediately" value="9,999" />
                 <ValueStackItem title="Monthly Live Q&A with Ronit" description="Get your questions answered directly, gain personalized insights" value="24,000" />
                 <ValueStackItem title="Weekly Accountability Groups" description="Stay on track with peer support and structured check-ins" value="12,000" />
+                <ValueStackItem title="City Meetup Access" description="Network and connect with members in your city through exclusive local events" value="15,000" />
+                <ValueStackItem title="Certificate Of Completion" description="Official recognition of your transformation journey and achievement" value="5,000" />
+                <ValueStackItem title="Ronit's Exclusive Ebook - Becoming Irresistible" description="Master the art of attraction and influence in all areas of life" value="2,999" />
+                <ValueStackItem title="Reward for Top Performer" description="Compete for excellence and win rewards up to ₹10,000" value="10,000" />
               </div>
 
               <div className="border-t border-border mt-8 pt-6">
                 <div className="flex justify-between items-center mb-4">
                   <span className="text-lg font-semibold">Total Value:</span>
-                  <span className="text-2xl font-bold text-muted-foreground line-through">₹95,997</span>
+                  <span className="text-2xl font-bold text-muted-foreground line-through">₹1,28,996</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-2xl font-bold">Your Investment Today:</span>
