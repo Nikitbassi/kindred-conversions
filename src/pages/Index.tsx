@@ -13,10 +13,15 @@ const Index = () => {
   // Set enrollment deadline (Oct 27th, 2025)
   const enrollmentDeadline = new Date('2025-10-27T23:59:59');
 
-  // Initialize Autoplay plugin with useRef
-  const autoplayPlugin = useRef(Autoplay({
-    delay: 5000,
-    stopOnInteraction: true
+  // Initialize separate Autoplay plugins for each carousel
+  const videoTestimonialsAutoplay = useRef(Autoplay({
+    delay: 4000,
+    stopOnInteraction: false
+  }));
+
+  const textTestimonialsAutoplay = useRef(Autoplay({
+    delay: 4000,
+    stopOnInteraction: false
   }));
   const handleJoinNow = () => {
     window.open('https://pages.razorpay.com/mic-2', '_blank');
@@ -158,7 +163,7 @@ const Index = () => {
             <Carousel opts={{
             align: "start",
             loop: true
-          }} plugins={[autoplayPlugin.current]} className="w-full">
+          }} plugins={[videoTestimonialsAutoplay.current]} className="w-full">
               <CarouselContent className="-ml-2 md:-ml-4">
                 <CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
                   <VideoTestimonial name="Arjun Mehta" role="Software Engineer, Mumbai" videoUrl="https://www.youtube.com/watch?v=dQw4w9WgXcQ" thumbnailUrl="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=450&fit=crop" isYouTube={true} />
@@ -200,7 +205,7 @@ const Index = () => {
             <Carousel opts={{
             align: "start",
             loop: true
-          }} plugins={[autoplayPlugin.current]} className="w-full">
+          }} plugins={[textTestimonialsAutoplay.current]} className="w-full">
               <CarouselContent className="-ml-2 md:-ml-4">
                 <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                   <div className="h-[400px]">
