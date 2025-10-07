@@ -34,7 +34,7 @@ const Index = () => {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               You're Not Overwhelmed.
               <br />
-              <span className="text-primary">Never Fight Alone Again.</span>
+              <span className="text-primary">You're Under-fulfilled.</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
               Join 10,000+ men who've stopped settling and started winning—in life, career, and relationships.
