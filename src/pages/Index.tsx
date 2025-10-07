@@ -277,7 +277,7 @@ const Index = () => {
               You can keep going it alone, hoping things will magically change.
               <br />
               <br />
-              Or you can take action today and join a brotherhood that will push you, support you, 
+              Or you can take action today and join a community that will push you, support you, 
               and help you become the man you're meant to be.
             </p>
             <p className="text-2xl font-bold mb-8">
