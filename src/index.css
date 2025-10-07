@@ -18,8 +18,8 @@ All colors MUST be HSL.
     --popover: 222 40% 10%;
     --popover-foreground: 0 0% 98%;
 
-    /* Olive Green - Main Accent */
-    --primary: 72 82% 20%;
+    /* Mustang Orange - Main Accent */
+    --primary: 24 95% 55%;
     --primary-foreground: 0 0% 100%;
     
     /* Supporting Colors */
@@ -29,7 +29,7 @@ All colors MUST be HSL.
     --muted: 222 30% 20%;
     --muted-foreground: 0 0% 65%;
 
-    --accent: 72 82% 20%;
+    --accent: 24 95% 55%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -37,17 +37,17 @@ All colors MUST be HSL.
 
     --border: 222 30% 18%;
     --input: 222 30% 18%;
-    --ring: 72 82% 20%;
+    --ring: 24 95% 55%;
 
     --radius: 0.75rem;
 
     /* Premium Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(222 47% 7%) 0%, hsl(222 40% 12%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(72 82% 20%) 0%, hsl(72 75% 25%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(24 95% 55%) 0%, hsl(18 90% 50%) 100%);
     --gradient-card: linear-gradient(180deg, hsl(222 40% 12%) 0%, hsl(222 40% 10%) 100%);
     
     /* Shadows */
-    --shadow-glow: 0 0 40px hsl(72 82% 20% / 0.4);
+    --shadow-glow: 0 0 40px hsl(24 95% 55% / 0.3);
     --shadow-card: 0 10px 40px hsl(0 0% 0% / 0.5);
     
     /* Animations */
