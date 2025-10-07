@@ -3,16 +3,23 @@ import { X } from 'lucide-react';
 
 interface Notification {
   id: number;
-  name: string;
-  city: string;
+  message: string;
+  type: 'join' | 'count-week' | 'count-today' | 'milestone';
 }
 
 const mockNotifications: Notification[] = [
-  { id: 1, name: 'Amit', city: 'Mumbai' },
-  { id: 2, name: 'Priya', city: 'Delhi' },
-  { id: 3, name: 'Rahul', city: 'Bangalore' },
-  { id: 4, name: 'Sneha', city: 'Pune' },
-  { id: 5, name: 'Vikram', city: 'Chennai' },
+  { id: 1, message: 'Arjun from Mumbai just joined the Inner Circle!', type: 'join' },
+  { id: 2, message: 'Neha from Delhi just joined the Inner Circle!', type: 'join' },
+  { id: 3, message: 'Karthik from Bangalore just joined the Inner Circle!', type: 'join' },
+  { id: 4, message: 'Priyanka from Pune just joined the Inner Circle!', type: 'join' },
+  { id: 5, message: 'Rohan from Chennai just joined the Inner Circle!', type: 'join' },
+  { id: 6, message: '127 people joined last week', type: 'count-week' },
+  { id: 7, message: '23 people joined today', type: 'count-today' },
+  { id: 8, message: '89 people joined last week', type: 'count-week' },
+  { id: 9, message: '31 people joined today', type: 'count-today' },
+  { id: 10, message: 'Aisha from Hyderabad just joined the Inner Circle!', type: 'join' },
+  { id: 11, message: '156 people joined last week', type: 'count-week' },
+  { id: 12, message: '42 people joined today', type: 'count-today' },
 ];
 
 export const FomoNotification = () => {
@@ -51,9 +58,8 @@ export const FomoNotification = () => {
           <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
           <div>
             <p className="text-sm font-medium text-foreground">
-              {currentNotification.name} from {currentNotification.city}
+              {currentNotification.message}
             </p>
-            <p className="text-xs text-muted-foreground">just joined the Inner Circle!</p>
           </div>
         </div>
       </div>
