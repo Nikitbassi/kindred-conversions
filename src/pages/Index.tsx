@@ -149,9 +149,7 @@ const Index = () => {
       {/* Video Testimonials Section */}
       <section className="py-20 bg-card">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-            Hear from Our Brotherhood
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Hear from Our Community</h2>
           <p className="text-center text-muted-foreground mb-12">
             Real transformations. Real stories. Real people.
           </p>
@@ -200,9 +198,9 @@ const Index = () => {
 
           <div className="max-w-6xl mx-auto">
             <Carousel opts={{
-              align: "start",
-              loop: true
-            }} plugins={[autoplayPlugin.current]} className="w-full">
+            align: "start",
+            loop: true
+          }} plugins={[autoplayPlugin.current]} className="w-full">
               <CarouselContent className="-ml-2 md:-ml-4">
                 <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                   <div className="h-[400px]">
