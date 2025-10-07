@@ -11,8 +11,7 @@ const Index = () => {
   const enrollmentDeadline = new Date('2025-11-01T23:59:59');
 
   const handleJoinNow = () => {
-    // Replace with actual Razorpay integration
-    window.open('https://razorpay.com/payment-link', '_blank');
+    window.open('https://pages.razorpay.com/mic-2', '_blank');
   };
 
   return (
