@@ -32,7 +32,7 @@ const Index = () => {
         <div className="max-w-5xl mx-auto text-center">
           <div className="animate-fade-in">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-              Find Your Tribe.
+              You're Not Overwhelmed.
               <br />
               <span className="text-primary">Never Fight Alone Again.</span>
             </h1>
