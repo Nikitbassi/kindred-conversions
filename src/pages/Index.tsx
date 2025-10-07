@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { VideoHero } from '@/components/VideoHero';
 import { CountdownTimer } from '@/components/CountdownTimer';
@@ -12,6 +13,11 @@ import Autoplay from 'embla-carousel-autoplay';
 const Index = () => {
   // Set enrollment deadline (Nov 1st, 2025)
   const enrollmentDeadline = new Date('2025-11-01T23:59:59');
+
+  // Initialize Autoplay plugin with useRef
+  const autoplayPlugin = useRef(
+    Autoplay({ delay: 5000, stopOnInteraction: true })
+  );
 
   const handleJoinNow = () => {
     window.open('https://pages.razorpay.com/mic-2', '_blank');
@@ -189,12 +195,7 @@ const Index = () => {
                 align: "start",
                 loop: true,
               }}
-              plugins={[
-                Autoplay({
-                  delay: 5000,
-                  stopOnInteraction: true,
-                })
-              ]}
+              plugins={[autoplayPlugin.current]}
               className="w-full"
             >
               <CarouselContent className="-ml-2 md:-ml-4">
