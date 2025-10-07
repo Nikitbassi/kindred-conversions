@@ -10,8 +10,8 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Shield, Users, TrendingUp, ArrowRight, CheckCircle2 } from 'lucide-react';
 import Autoplay from 'embla-carousel-autoplay';
 const Index = () => {
-  // Set enrollment deadline (Nov 1st, 2025)
-  const enrollmentDeadline = new Date('2025-11-01T23:59:59');
+  // Set enrollment deadline (Oct 27th, 2025)
+  const enrollmentDeadline = new Date('2025-10-27T23:59:59');
 
   // Initialize Autoplay plugin with useRef
   const autoplayPlugin = useRef(Autoplay({
