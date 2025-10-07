@@ -5,7 +5,9 @@ import { FomoNotification } from '@/components/FomoNotification';
 import { TestimonialCard } from '@/components/TestimonialCard';
 import { ValueStackItem } from '@/components/ValueStackItem';
 import { VideoTestimonial } from '@/components/VideoTestimonial';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { Shield, Users, TrendingUp, ArrowRight, CheckCircle2 } from 'lucide-react';
+import Autoplay from 'embla-carousel-autoplay';
 
 const Index = () => {
   // Set enrollment deadline (Nov 1st, 2025)
@@ -181,28 +183,79 @@ const Index = () => {
             Real transformations. Real stories. Real people.
           </p>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            <VideoTestimonial
-              name="Arjun Mehta"
-              role="Software Engineer, Mumbai"
-              videoUrl="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-              thumbnailUrl="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=450&fit=crop"
-              isYouTube={true}
-            />
-            <VideoTestimonial
-              name="Karthik Reddy"
-              role="Entrepreneur, Bangalore"
-              videoUrl="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-              thumbnailUrl="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&h=450&fit=crop"
-              isYouTube={true}
-            />
-            <VideoTestimonial
-              name="Rohan Sharma"
-              role="Marketing Manager, Delhi"
-              videoUrl="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-              thumbnailUrl="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&h=450&fit=crop"
-              isYouTube={true}
-            />
+          <div className="max-w-6xl mx-auto">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              plugins={[
+                Autoplay({
+                  delay: 5000,
+                  stopOnInteraction: true,
+                })
+              ]}
+              className="w-full"
+            >
+              <CarouselContent className="-ml-2 md:-ml-4">
+                <CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+                  <VideoTestimonial
+                    name="Arjun Mehta"
+                    role="Software Engineer, Mumbai"
+                    videoUrl="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                    thumbnailUrl="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=450&fit=crop"
+                    isYouTube={true}
+                  />
+                </CarouselItem>
+                <CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+                  <VideoTestimonial
+                    name="Karthik Reddy"
+                    role="Entrepreneur, Bangalore"
+                    videoUrl="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                    thumbnailUrl="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&h=450&fit=crop"
+                    isYouTube={true}
+                  />
+                </CarouselItem>
+                <CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+                  <VideoTestimonial
+                    name="Rohan Sharma"
+                    role="Marketing Manager, Delhi"
+                    videoUrl="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                    thumbnailUrl="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&h=450&fit=crop"
+                    isYouTube={true}
+                  />
+                </CarouselItem>
+                <CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+                  <VideoTestimonial
+                    name="Vikram Patel"
+                    role="Product Manager, Pune"
+                    videoUrl="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                    thumbnailUrl="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&h=450&fit=crop"
+                    isYouTube={true}
+                  />
+                </CarouselItem>
+                <CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+                  <VideoTestimonial
+                    name="Sahil Kumar"
+                    role="Fitness Coach, Hyderabad"
+                    videoUrl="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                    thumbnailUrl="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800&h=450&fit=crop"
+                    isYouTube={true}
+                  />
+                </CarouselItem>
+                <CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+                  <VideoTestimonial
+                    name="Aditya Singh"
+                    role="Startup Founder, Gurgaon"
+                    videoUrl="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                    thumbnailUrl="https://images.unsplash.com/photo-1463453091185-61582044d556?w=800&h=450&fit=crop"
+                    isYouTube={true}
+                  />
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious className="hidden md:flex" />
+              <CarouselNext className="hidden md:flex" />
+            </Carousel>
           </div>
         </div>
       </section>
