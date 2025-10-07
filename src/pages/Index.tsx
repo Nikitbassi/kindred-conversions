@@ -114,10 +114,10 @@ const Index = () => {
             <div className="bg-gradient-card border border-border rounded-2xl p-8 mb-8 shadow-card">
               <div className="space-y-6">
                 <ValueStackItem title="5 Core Transformation Courses" description="Mindset mastery, health optimization, career growth, relationship intelligence, and financial freedom" value="29,999" />
-                <ValueStackItem title="Lifetime Access to Private Community" description="Connect with 10,000+ like-minded men, share experiences, get support 24/7" value="19,999" />
+                <ValueStackItem title="Lifetime Access to Private Community" description="Connect with 10,000+ like-minded people, share experiences, get support 24/7" value="19,999" />
                 <ValueStackItem title="50+ Worksheets & Action Plans" description="Practical exercises and templates to implement what you learn immediately" value="9,999" />
                 <ValueStackItem title="Monthly Live Q&A with Ronit" description="Get your questions answered directly, gain personalized insights" value="24,000" />
-                <ValueStackItem title="City Meetup Access" description="Network and connect with members in your city through exclusive local events" value="8,000" />
+                <ValueStackItem title="City Meetup Access" description="Network and connect with members in your city through exclusive local events" value="Priceless" />
                 <ValueStackItem title="Ronit's Exclusive Ebook - Becoming Irresistible" description="Master the art of attraction and influence in all areas of life" value="4,000" />
                 <ValueStackItem title="Weekly Accountability Groups" description="Stay on track with peer support and structured check-ins" value="Priceless" />
                 <ValueStackItem title="Certificate Of Completion" description="Official recognition of your transformation journey and achievement" value="Priceless" />

@@ -19,7 +19,7 @@ export const ValueStackItem = ({ title, description, value }: ValueStackItemProp
         <p className="text-sm text-muted-foreground mb-2">{description}</p>
       </div>
       <div className="flex-shrink-0">
-        <span className="text-sm font-medium text-primary">₹{value}</span>
+        <span className="text-sm font-medium text-primary">{value === "Priceless" ? value : `₹${value}`}</span>
       </div>
     </div>
   );
