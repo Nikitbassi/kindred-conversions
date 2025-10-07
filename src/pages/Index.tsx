@@ -4,6 +4,7 @@ import { CountdownTimer } from '@/components/CountdownTimer';
 import { FomoNotification } from '@/components/FomoNotification';
 import { TestimonialCard } from '@/components/TestimonialCard';
 import { ValueStackItem } from '@/components/ValueStackItem';
+import { VideoTestimonial } from '@/components/VideoTestimonial';
 import { Shield, Users, TrendingUp, ArrowRight, CheckCircle2 } from 'lucide-react';
 
 const Index = () => {
@@ -170,30 +171,66 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      {/* Video Testimonials Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+            Hear from Our Brotherhood
+          </h2>
+          <p className="text-center text-muted-foreground mb-12">
+            Real transformations. Real stories. Real people.
+          </p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <VideoTestimonial
+              name="Arjun Mehta"
+              role="Software Engineer, Mumbai"
+              videoUrl="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              thumbnailUrl="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=450&fit=crop"
+              isYouTube={true}
+            />
+            <VideoTestimonial
+              name="Karthik Reddy"
+              role="Entrepreneur, Bangalore"
+              videoUrl="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              thumbnailUrl="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&h=450&fit=crop"
+              isYouTube={true}
+            />
+            <VideoTestimonial
+              name="Rohan Sharma"
+              role="Marketing Manager, Delhi"
+              videoUrl="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              thumbnailUrl="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&h=450&fit=crop"
+              isYouTube={true}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Text Testimonials Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-            Real Results from Real Members
+            More Success Stories
           </h2>
           <p className="text-center text-muted-foreground mb-12">
-            Don't take our word for it. Here's what the brotherhood says:
+            Join thousands who've already transformed their lives
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             <TestimonialCard
-              name="Arjun Mehta"
-              role="Software Engineer, Mumbai"
+              name="Vikram Patel"
+              role="Product Manager, Pune"
               content="I was skeptical at first. But the Inner Circle gave me the clarity and support I desperately needed. Within 3 months, I got promoted and finally feel confident in my own skin."
             />
             <TestimonialCard
-              name="Karthik Reddy"
-              role="Entrepreneur, Bangalore"
+              name="Sahil Kumar"
+              role="Fitness Coach, Hyderabad"
               content="This isn't another self-help course. It's a real community of men pushing each other to be better. The accountability alone is worth 10x the price."
             />
             <TestimonialCard
-              name="Rohan Sharma"
-              role="Marketing Manager, Delhi"
+              name="Aditya Singh"
+              role="Startup Founder, Gurgaon"
               content="For the first time in years, I don't feel alone in my struggles. The frameworks work, and having brothers who understand makes all the difference."
             />
           </div>
