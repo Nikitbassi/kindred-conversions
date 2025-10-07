@@ -204,23 +204,35 @@ const Index = () => {
               loop: true
             }} plugins={[autoplayPlugin.current]} className="w-full">
               <CarouselContent className="-ml-2 md:-ml-4">
-                <CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-                  <TestimonialCard name="Chiradeep Patra" role="Life Coach" content="I myself, being a Life Coach, have come across many coaches and colleagues who often rely on terms that are difficult to understand and remember for clients or people in general. But in the case of Ronit's approach, I would say it was absolutely simple to grasp, easy to understand, and practically implementable. He stays part of the community, not someone directing from the top only. I loved that about him." />
+                <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                  <div className="h-[400px]">
+                    <TestimonialCard name="Chiradeep Patra" role="Life Coach" content="I myself, being a Life Coach, have come across many coaches and colleagues who often rely on terms that are difficult to understand and remember for clients or people in general. But in the case of Ronit's approach, I would say it was absolutely simple to grasp, easy to understand, and practically implementable. He stays part of the community, not someone directing from the top only. I loved that about him." />
+                  </div>
                 </CarouselItem>
-                <CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-                  <TestimonialCard name="Ramya" role="Entrepreneur" content="You might be wondering— is it worth the money, time, and effort? Without a doubt, yes. One of the best experiences I've had, and I walked away feeling like it was worth far more than what I paid. Absolutely recommend it!" />
+                <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                  <div className="h-[400px]">
+                    <TestimonialCard name="Ramya" role="Entrepreneur" content="You might be wondering— is it worth the money, time, and effort? Without a doubt, yes. One of the best experiences I've had, and I walked away feeling like it was worth far more than what I paid. Absolutely recommend it!" />
+                  </div>
                 </CarouselItem>
-                <CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-                  <TestimonialCard name="Anjali Gupta" role="Business Consultant" content="He is such an amazing mentor! Despite of 100s of us joining the masterclass he made sure to listen to everyone out there. He is very grounded and the most present coach I have ever seen in my life. His sharings were practical and to the point and i got so many insights from it. It is definitely going to help transform me thats for sure. Highly recommended to all" />
+                <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                  <div className="h-[400px]">
+                    <TestimonialCard name="Anjali Gupta" role="Business Consultant" content="He is such an amazing mentor! Despite of 100s of us joining the masterclass he made sure to listen to everyone out there. He is very grounded and the most present coach I have ever seen in my life. His sharings were practical and to the point and i got so many insights from it. It is definitely going to help transform me thats for sure. Highly recommended to all" />
+                  </div>
                 </CarouselItem>
-                <CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-                  <TestimonialCard name="Navya Manjunath" role="Marketing Professional" content="Ronit is a wonderful coach! I love his coaching style which is a careful balance between 'I will not tolerate bullshit' and 'I will be there for you no matter what'. He is empathetic, funny and has a great depth of knowledge to identify and understand his client's issues so that he can partner up with them in their journey to reach their highest potential. Personally, he has empathetically challenged me to let go of my fears and embrace the power within me." />
+                <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                  <div className="h-[400px]">
+                    <TestimonialCard name="Navya Manjunath" role="Marketing Professional" content="Ronit is a wonderful coach! I love his coaching style which is a careful balance between 'I will not tolerate bullshit' and 'I will be there for you no matter what'. He is empathetic, funny and has a great depth of knowledge to identify and understand his client's issues so that he can partner up with them in their journey to reach their highest potential. Personally, he has empathetically challenged me to let go of my fears and embrace the power within me." />
+                  </div>
                 </CarouselItem>
-                <CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-                  <TestimonialCard name="Dr Ritu Priya Pareek" role="Medical Professional" content="It covers everything—from recognising past mistakes to having a clear future vision, overcoming obstacles, healing, and improving life step by step. The exercises are simple yet powerful, helping you take real action. I highly recommend it to anyone looking for self-improvement and a better, more fulfilling life" />
+                <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                  <div className="h-[400px]">
+                    <TestimonialCard name="Dr Ritu Priya Pareek" role="Medical Professional" content="It covers everything—from recognising past mistakes to having a clear future vision, overcoming obstacles, healing, and improving life step by step. The exercises are simple yet powerful, helping you take real action. I highly recommend it to anyone looking for self-improvement and a better, more fulfilling life" />
+                  </div>
                 </CarouselItem>
-                <CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-                  <TestimonialCard name="Disha Mehra" role="Creative Director" content="The flow of workshop was fantastic and to the point discussions, it just didn't seem like those regular workshops, looking forward for more such insightful sessions, Great job Ronit Ranjan, cheers!" />
+                <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                  <div className="h-[400px]">
+                    <TestimonialCard name="Disha Mehra" role="Creative Director" content="The flow of workshop was fantastic and to the point discussions, it just didn't seem like those regular workshops, looking forward for more such insightful sessions, Great job Ronit Ranjan, cheers!" />
+                  </div>
                 </CarouselItem>
               </CarouselContent>
               <CarouselPrevious className="hidden md:flex" />
