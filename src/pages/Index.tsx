@@ -184,8 +184,8 @@ const Index = () => {
                   <VideoTestimonial name="Aditya Singh" role="Startup Founder, Gurgaon" videoUrl="https://www.youtube.com/watch?v=dQw4w9WgXcQ" thumbnailUrl="https://images.unsplash.com/photo-1463453091185-61582044d556?w=800&h=450&fit=crop" isYouTube={true} />
                 </CarouselItem>
               </CarouselContent>
-              <CarouselPrevious className="hidden md:flex" />
-              <CarouselNext className="hidden md:flex" />
+              <CarouselPrevious />
+              <CarouselNext />
             </Carousel>
           </div>
         </div>
@@ -238,8 +238,8 @@ const Index = () => {
                   </div>
                 </CarouselItem>
               </CarouselContent>
-              <CarouselPrevious className="hidden md:flex" />
-              <CarouselNext className="hidden md:flex" />
+              <CarouselPrevious />
+              <CarouselNext />
             </Carousel>
           </div>
         </div>
