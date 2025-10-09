@@ -9,7 +9,7 @@ export const VideoHero = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   return (
-    <div className="relative w-full aspect-video max-w-4xl mx-auto rounded-xl overflow-hidden shadow-card">
+    <div className="relative w-full aspect-video max-w-4xl mx-auto rounded-lg sm:rounded-xl overflow-hidden shadow-card">
       {/* Video Element */}
       <video
         ref={videoRef}
@@ -33,10 +33,10 @@ export const VideoHero = () => {
           }}
           className="absolute inset-0 flex items-center justify-center bg-black/40 cursor-pointer animate-pulse-glow"
         >
-          <div className="bg-background/90 backdrop-blur-sm rounded-2xl px-8 py-6 text-center border border-primary/30">
-            <VolumeX className="h-12 w-12 mx-auto mb-3 text-primary" />
-            <p className="text-lg font-semibold mb-1">Your video has started...</p>
-            <p className="text-sm text-muted-foreground">Click anywhere to listen</p>
+          <div className="bg-background/90 backdrop-blur-sm rounded-xl sm:rounded-2xl px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-center border border-primary/30 mx-4">
+            <VolumeX className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 mx-auto mb-2 sm:mb-3 text-primary" />
+            <p className="text-base sm:text-lg font-semibold mb-1">Your video has started...</p>
+            <p className="text-xs sm:text-sm text-muted-foreground">Click anywhere to listen</p>
           </div>
         </div>
       )}
@@ -52,9 +52,9 @@ export const VideoHero = () => {
           }}
           size="icon"
           variant="secondary"
-          className="absolute bottom-4 right-4 rounded-full"
+          className="absolute bottom-2 right-2 sm:bottom-4 sm:right-4 rounded-full h-8 w-8 sm:h-10 sm:w-10"
         >
-          {isMuted ? <VolumeX className="h-5 w-5" /> : <Volume2 className="h-5 w-5" />}
+          {isMuted ? <VolumeX className="h-4 w-4 sm:h-5 sm:w-5" /> : <Volume2 className="h-4 w-4 sm:h-5 sm:w-5" />}
         </Button>
       )}
     </div>

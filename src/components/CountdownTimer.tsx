@@ -34,15 +34,15 @@ export const CountdownTimer = ({ targetDate }: { targetDate: Date }) => {
   });
 
   return (
-    <div className="flex gap-4 justify-center">
+    <div className="flex gap-2 sm:gap-3 md:gap-4 justify-center">
       {Object.entries(timeLeft).map(([interval, value]) => (
         <div key={interval} className="flex flex-col items-center">
-          <div className="bg-gradient-card border border-border rounded-lg p-4 min-w-[80px] shadow-card">
-            <div className="text-3xl md:text-4xl font-bold text-primary tabular-nums">
+          <div className="bg-gradient-card border border-border rounded-lg p-2 sm:p-3 md:p-4 min-w-[60px] sm:min-w-[70px] md:min-w-[80px] shadow-card">
+            <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary tabular-nums">
               {String(value).padStart(2, '0')}
             </div>
           </div>
-          <div className="text-sm text-muted-foreground mt-2 capitalize">{interval}</div>
+          <div className="text-xs sm:text-sm text-muted-foreground mt-1 sm:mt-2 capitalize">{interval}</div>
         </div>
       ))}
     </div>

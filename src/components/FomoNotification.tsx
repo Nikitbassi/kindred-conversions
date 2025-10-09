@@ -46,18 +46,18 @@ export const FomoNotification = () => {
   if (!visible || !currentNotification) return null;
 
   return (
-    <div className="fixed bottom-6 left-6 z-50 animate-slide-up">
-      <div className="bg-card border border-primary/20 rounded-lg shadow-glow p-4 pr-10 max-w-sm">
+    <div className="fixed bottom-4 left-4 sm:bottom-6 sm:left-6 z-50 animate-slide-up max-w-[calc(100vw-2rem)] sm:max-w-sm">
+      <div className="bg-card border border-primary/20 rounded-lg shadow-glow p-3 sm:p-4 pr-8 sm:pr-10">
         <button
           onClick={() => setVisible(false)}
           className="absolute top-2 right-2 text-muted-foreground hover:text-foreground transition-colors"
         >
-          <X className="h-4 w-4" />
+          <X className="h-3 w-3 sm:h-4 sm:w-4" />
         </button>
-        <div className="flex items-center gap-3">
-          <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
+        <div className="flex items-center gap-2 sm:gap-3">
+          <div className="w-2 h-2 bg-primary rounded-full animate-pulse flex-shrink-0" />
           <div>
-            <p className="text-sm font-medium text-foreground">
+            <p className="text-xs sm:text-sm font-medium text-foreground">
               {currentNotification.message}
             </p>
           </div>

@@ -59,15 +59,15 @@ export const VideoTestimonial = ({
               className="absolute inset-0 flex items-center justify-center bg-black/40 hover:bg-black/50 transition-colors cursor-pointer"
               aria-label={`Play testimonial from ${name}`}
             >
-              <div className="bg-primary/90 hover:bg-primary rounded-full p-6 shadow-glow transition-all duration-300 group-hover:scale-110">
-                <Play className="h-12 w-12 text-primary-foreground" fill="currentColor" />
+              <div className="bg-primary/90 hover:bg-primary rounded-full p-4 sm:p-5 md:p-6 shadow-glow transition-all duration-300 group-hover:scale-110">
+                <Play className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 text-primary-foreground" fill="currentColor" />
               </div>
             </button>
 
             {/* Name overlay on thumbnail */}
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
-              <p className="font-semibold text-white">{name}</p>
-              <p className="text-sm text-gray-300">{role}</p>
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-3 sm:p-4">
+              <p className="font-semibold text-sm sm:text-base text-white">{name}</p>
+              <p className="text-xs sm:text-sm text-gray-300">{role}</p>
             </div>
           </>
         ) : (
@@ -97,9 +97,9 @@ export const VideoTestimonial = ({
       </div>
 
       {isPlaying && (
-        <div className="p-4 bg-card/50">
-          <p className="font-semibold">{name}</p>
-          <p className="text-sm text-muted-foreground">{role}</p>
+        <div className="p-3 sm:p-4 bg-card/50">
+          <p className="text-sm sm:text-base font-semibold">{name}</p>
+          <p className="text-xs sm:text-sm text-muted-foreground">{role}</p>
         </div>
       )}
     </div>
