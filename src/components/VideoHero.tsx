@@ -33,10 +33,10 @@ export const VideoHero = () => {
           }}
           className="absolute inset-0 flex items-center justify-center bg-black/40 cursor-pointer animate-pulse-glow"
         >
-          <div className="bg-background/90 backdrop-blur-sm rounded-xl sm:rounded-2xl px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-center border border-primary/30 mx-4">
-            <VolumeX className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 mx-auto mb-2 sm:mb-3 text-primary" />
-            <p className="text-base sm:text-lg font-semibold mb-1">Your video has started...</p>
-            <p className="text-xs sm:text-sm text-muted-foreground">Click anywhere to listen</p>
+          <div className="bg-background/90 backdrop-blur-sm rounded-lg sm:rounded-2xl px-3 sm:px-6 md:px-8 py-2 sm:py-5 md:py-6 text-center border border-primary/30 mx-4">
+            <VolumeX className="h-6 w-6 sm:h-10 sm:w-10 md:h-12 md:w-12 mx-auto mb-1 sm:mb-3 text-primary" />
+            <p className="text-sm sm:text-lg font-semibold mb-0.5 sm:mb-1">Your video has started...</p>
+            <p className="text-[10px] sm:text-sm text-muted-foreground">Click anywhere to listen</p>
           </div>
         </div>
       )}
