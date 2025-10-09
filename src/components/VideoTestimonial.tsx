@@ -1,24 +1,29 @@
-import { useState } from 'react';
+import { useEffect } from 'react';
 import { Play } from 'lucide-react';
 
 interface VideoTestimonialProps {
+  id: string;
   name: string;
   role: string;
   videoUrl: string; // YouTube/Vimeo URL or direct video file URL
   thumbnailUrl?: string;
   isYouTube?: boolean;
   isVimeo?: boolean;
+  isPlaying: boolean;
+  onPlay: () => void;
 }
 
 export const VideoTestimonial = ({ 
+  id,
   name, 
   role, 
   videoUrl, 
   thumbnailUrl,
   isYouTube = false,
-  isVimeo = false
+  isVimeo = false,
+  isPlaying,
+  onPlay
 }: VideoTestimonialProps) => {
-  const [isPlaying, setIsPlaying] = useState(false);
 
   // Extract YouTube video ID
   const getYouTubeEmbedUrl = (url: string) => {
@@ -55,7 +60,7 @@ export const VideoTestimonial = ({
             
             {/* Play Button Overlay */}
             <button
-              onClick={() => setIsPlaying(true)}
+              onClick={onPlay}
               className="absolute inset-0 flex items-center justify-center bg-black/40 hover:bg-black/50 transition-colors cursor-pointer"
               aria-label={`Play testimonial from ${name}`}
             >
