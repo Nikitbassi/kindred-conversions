@@ -40,7 +40,7 @@ export const VideoTestimonial = ({
 
   return (
     <div className="bg-card border border-border rounded-xl overflow-hidden shadow-card hover:shadow-glow transition-all duration-300 animate-fade-in">
-      <div className="relative aspect-video bg-muted group">
+      <div className="relative aspect-[9/16] bg-muted group">
         {!isPlaying ? (
           <>
             {/* Thumbnail */}
