@@ -1,22 +1,24 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Volume2, VolumeX } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import heroVideo from '@/assets/hero-video.mp4';
 
 export const VideoHero = () => {
   const [isMuted, setIsMuted] = useState(true);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   return (
     <div className="relative w-full aspect-video max-w-4xl mx-auto rounded-xl overflow-hidden shadow-card">
-      {/* Video Placeholder - Replace with actual video element */}
-      <div className="absolute inset-0 bg-gradient-card flex items-center justify-center">
-        <div className="text-center">
-          <div className="w-20 h-20 mx-auto mb-4 bg-primary/20 rounded-full flex items-center justify-center">
-            <div className="w-0 h-0 border-t-[12px] border-t-transparent border-l-[20px] border-l-primary border-b-[12px] border-b-transparent ml-1" />
-          </div>
-          <p className="text-muted-foreground text-sm">Video Player Placeholder</p>
-          <p className="text-xs text-muted-foreground mt-1">Integrate your presale video here</p>
-        </div>
-      </div>
+      {/* Video Element */}
+      <video
+        ref={videoRef}
+        src={heroVideo}
+        muted={isMuted}
+        autoPlay
+        loop
+        playsInline
+        className="w-full h-full object-cover"
+      />
 
       {/* Unmute Overlay - Shows when video is muted */}
       {isMuted && (
@@ -34,7 +36,12 @@ export const VideoHero = () => {
 
       {/* Mute/Unmute Button */}
       <Button
-        onClick={() => setIsMuted(!isMuted)}
+        onClick={() => {
+          setIsMuted(!isMuted);
+          if (videoRef.current) {
+            videoRef.current.muted = !isMuted;
+          }
+        }}
         size="icon"
         variant="secondary"
         className="absolute bottom-4 right-4 rounded-full"
