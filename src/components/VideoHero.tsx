@@ -5,6 +5,7 @@ import heroVideo from '@/assets/hero-video.mp4';
 
 export const VideoHero = () => {
   const [isMuted, setIsMuted] = useState(true);
+  const [hasUnmuted, setHasUnmuted] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
   return (
@@ -21,9 +22,15 @@ export const VideoHero = () => {
       />
 
       {/* Unmute Overlay - Shows when video is muted */}
-      {isMuted && (
+      {isMuted && !hasUnmuted && (
         <div
-          onClick={() => setIsMuted(false)}
+          onClick={() => {
+            setIsMuted(false);
+            setHasUnmuted(true);
+            if (videoRef.current) {
+              videoRef.current.muted = false;
+            }
+          }}
           className="absolute inset-0 flex items-center justify-center bg-black/40 cursor-pointer animate-pulse-glow"
         >
           <div className="bg-background/90 backdrop-blur-sm rounded-2xl px-8 py-6 text-center border border-primary/30">
@@ -34,20 +41,22 @@ export const VideoHero = () => {
         </div>
       )}
 
-      {/* Mute/Unmute Button */}
-      <Button
-        onClick={() => {
-          setIsMuted(!isMuted);
-          if (videoRef.current) {
-            videoRef.current.muted = !isMuted;
-          }
-        }}
-        size="icon"
-        variant="secondary"
-        className="absolute bottom-4 right-4 rounded-full"
-      >
-        {isMuted ? <VolumeX className="h-5 w-5" /> : <Volume2 className="h-5 w-5" />}
-      </Button>
+      {/* Mute/Unmute Button - Hidden after first unmute */}
+      {!hasUnmuted && (
+        <Button
+          onClick={() => {
+            setIsMuted(!isMuted);
+            if (videoRef.current) {
+              videoRef.current.muted = !isMuted;
+            }
+          }}
+          size="icon"
+          variant="secondary"
+          className="absolute bottom-4 right-4 rounded-full"
+        >
+          {isMuted ? <VolumeX className="h-5 w-5" /> : <Volume2 className="h-5 w-5" />}
+        </Button>
+      )}
     </div>
   );
 };
