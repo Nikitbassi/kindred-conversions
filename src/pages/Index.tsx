@@ -258,15 +258,15 @@ const Index = () => {
                   </li>
                   <li className="flex gap-3 sm:gap-4">
                     <span className="text-primary text-xl sm:text-2xl mt-1 flex-shrink-0">•</span>
-                    <span>
+                    <div className="bg-card border border-border rounded-xl p-4 sm:p-6 shadow-glow">
                       Anyone above seeking a <strong className="font-bold">powerful, exclusive community</strong> of like-minded individuals to push their growth.
-                    </span>
+                    </div>
                   </li>
                   <li className="flex gap-3 sm:gap-4">
                     <span className="text-primary text-xl sm:text-2xl mt-1 flex-shrink-0">•</span>
-                    <span>
+                    <div className="bg-card border border-border rounded-xl p-4 sm:p-6 shadow-glow">
                       Beginners, Intermediates, or Specialists in life - this program is suitable for all of you.
-                    </span>
+                    </div>
                   </li>
                 </ul>
               </div>
