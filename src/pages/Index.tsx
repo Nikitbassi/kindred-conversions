@@ -74,22 +74,50 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Problem Section */}
+      {/* Walk Away With Section */}
       <section className="py-12 sm:py-16 md:py-20 bg-card">
         <div className="container mx-auto px-4 sm:px-6">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 text-center">
-              You're Tired of Fighting Your Battles Alone
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-6 text-center">
+              What You'll <span className="text-primary">Walk Away With:</span>
             </h2>
-            <div className="space-y-4 sm:space-y-6 text-base sm:text-lg text-muted-foreground">
-              <p>
-                You wake up every day, show up for work, take care of responsibilities. On paper, you're doing fine.
-              </p>
-              <p>
-                But deep down? You feel stuck. Isolated. Like you're the only one who doesn't have it all figured out.
-              </p>
-              <p className="font-semibold text-foreground">
-                The truth is: <span className="text-primary">You were never meant to do this alone.</span>
+            <p className="text-center text-base sm:text-lg text-muted-foreground mb-8 sm:mb-12">
+              By the end of the Mustang Inner Circle, you'll experience deep internal shifts -
+            </p>
+
+            <div className="max-w-2xl mx-auto space-y-3 sm:space-y-4 mb-8 sm:mb-12">
+              {[
+                'Emotional Pattern Clarity',
+                'Powerful Self-Expression',
+                'Money & Visibility Empowerment',
+                'Nervous System Regulation',
+                'Unshakeable Inner Authority',
+                'Personal Leadership Code',
+                'Healed Relationship Patterns',
+                'Purpose-Work Alignment',
+                'Lifelong Growth Community'
+              ].map((item, index) => (
+                <div 
+                  key={index}
+                  className="bg-background/50 backdrop-blur-sm border border-border rounded-lg sm:rounded-xl p-4 sm:p-5 shadow-sm hover:shadow-md transition-all hover:border-primary/40 group"
+                >
+                  <div className="flex items-center gap-3 sm:gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                      <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-primary animate-pulse" />
+                    </div>
+                    <p className="text-sm sm:text-base md:text-lg font-medium text-foreground">
+                      {item}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="text-center max-w-2xl mx-auto">
+              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                This is not just personal development.
+                <br />
+                It's a full <span className="font-semibold italic text-foreground">recalization</span> of how you live, lead, love, and show up in the world.
               </p>
             </div>
           </div>
