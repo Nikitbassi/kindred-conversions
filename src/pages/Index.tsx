@@ -276,7 +276,7 @@ const Index = () => {
                 <div className="relative transform hover:scale-[1.02] transition-transform duration-500">
                   <div className="absolute inset-0 bg-gradient-accent rounded-3xl blur-2xl opacity-20 animate-pulse"></div>
                   <img 
-                    src="/src/assets/community-group.png"
+                    src="/src/assets/community-group.avif"
                     alt="Community group huddle showing diverse individuals coming together in unity"
                     className="relative w-full h-auto rounded-3xl shadow-2xl border-4 border-primary/20"
                   />
