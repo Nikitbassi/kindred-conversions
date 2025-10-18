@@ -96,7 +96,7 @@ const Index = () => {
               By the end of the Mustang Inner Circle, you'll experience deep internal shifts -
             </p>
 
-            <div className="max-w-2xl mx-auto space-y-3 sm:space-y-4 mb-8 sm:mb-12">
+            <div className="max-w-2xl mx-auto mb-8 sm:mb-12">
               {[
                 "Emotional Pattern Clarity",
                 "Powerful Self-Expression",
@@ -108,16 +108,27 @@ const Index = () => {
                 "Purpose-Work Alignment",
                 "Lifelong Growth Community",
               ].map((item, index) => (
-                <div
-                  key={index}
-                  className="bg-background/50 backdrop-blur-sm border border-border rounded-lg sm:rounded-xl p-4 sm:p-5 shadow-sm hover:shadow-md transition-all hover:border-primary/40 group"
-                >
-                  <div className="flex items-center gap-3 sm:gap-4">
-                    <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                      <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-primary animate-pulse" />
+                <div key={index} className="relative">
+                  <div
+                    className="bg-background/50 backdrop-blur-sm border border-border rounded-lg sm:rounded-xl p-4 sm:p-5 shadow-sm hover:shadow-md transition-all hover:border-primary/40 group animate-fade-in"
+                    style={{ animationDelay: `${index * 150}ms`, animationFillMode: 'backwards' }}
+                  >
+                    <div className="flex items-center gap-3 sm:gap-4">
+                      <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                        <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-primary animate-pulse" />
+                      </div>
+                      <p className="text-sm sm:text-base md:text-lg font-medium text-foreground">{item}</p>
                     </div>
-                    <p className="text-sm sm:text-base md:text-lg font-medium text-foreground">{item}</p>
                   </div>
+                  {/* Connecting Dot */}
+                  {index < 8 && (
+                    <div className="flex justify-center py-2">
+                      <div 
+                        className="w-1.5 h-1.5 rounded-full bg-primary/40 animate-fade-in"
+                        style={{ animationDelay: `${index * 150 + 75}ms`, animationFillMode: 'backwards' }}
+                      />
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
