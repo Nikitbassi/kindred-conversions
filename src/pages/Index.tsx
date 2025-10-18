@@ -146,7 +146,7 @@ const Index = () => {
 
             <div className="grid md:grid-cols-2 gap-6 sm:gap-8 mb-10 sm:mb-12">
               {/* Left Column - 5 Core Courses */}
-              <div className="bg-gradient-card border border-border rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-card hover:shadow-glow transition-all">
+              <div className="bg-gradient-card border border-border rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-glow transition-all">
                 <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-center md:text-left">
                   5 Core Courses - Watch Anytime, Own Forever
                 </h3>
