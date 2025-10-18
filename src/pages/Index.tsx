@@ -302,7 +302,7 @@ const Index = () => {
               {/* Row 1 - Top section with photos and intro */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12 lg:mb-16 items-start">
                 {/* Left - Two tilted photos */}
-                <div className="flex justify-center lg:justify-start gap-4 relative">
+                <div className="flex justify-center lg:justify-start gap-2 relative">
                   <div className="relative transform -rotate-6">
                     <div className="w-40 h-48 sm:w-48 sm:h-56 md:w-52 md:h-60 bg-gradient-to-br from-amber-200 via-blue-400 to-blue-200 rounded-2xl shadow-2xl overflow-hidden">
                       <div className="w-full h-full bg-gradient-to-br from-primary/20 to-primary/40"></div>
