@@ -249,26 +249,26 @@ const Index = () => {
                   <span className="text-primary">Who</span> Is This For?
                 </h2>
                 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-base sm:text-lg md:text-xl">
-                  <div className="flex flex-col gap-3 sm:gap-4">
-                    <span className="text-primary text-xl sm:text-2xl flex-shrink-0">•</span>
+                <ul className="space-y-4 sm:space-y-6 text-base sm:text-lg md:text-xl">
+                  <li className="flex gap-3 sm:gap-4">
+                    <span className="text-primary text-xl sm:text-2xl mt-1 flex-shrink-0">•</span>
                     <span>
                       Working Professionals, Students, Entrepreneurs, and individuals who want to change their present life into something much more fulfilling.
                     </span>
-                  </div>
-                  <div className="flex flex-col gap-3 sm:gap-4">
-                    <span className="text-primary text-xl sm:text-2xl flex-shrink-0">•</span>
+                  </li>
+                  <li className="flex gap-3 sm:gap-4">
+                    <span className="text-primary text-xl sm:text-2xl mt-1 flex-shrink-0">•</span>
                     <span>
                       Anyone above seeking a <strong className="font-bold">powerful, exclusive community</strong> of like-minded individuals to push their growth.
                     </span>
-                  </div>
-                  <div className="flex flex-col gap-3 sm:gap-4">
-                    <span className="text-primary text-xl sm:text-2xl flex-shrink-0">•</span>
+                  </li>
+                  <li className="flex gap-3 sm:gap-4">
+                    <span className="text-primary text-xl sm:text-2xl mt-1 flex-shrink-0">•</span>
                     <span>
                       Beginners, Intermediates, or Specialists in life - this program is suitable for all of you.
                     </span>
-                  </div>
-                </div>
+                  </li>
+                </ul>
               </div>
 
               {/* Right - Image */}
