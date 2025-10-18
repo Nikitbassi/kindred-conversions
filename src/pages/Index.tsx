@@ -259,12 +259,12 @@ const Index = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12 lg:mb-16 items-start">
                 {/* Left - Two tilted photos */}
                 <div className="flex justify-center lg:justify-start gap-4 relative">
-                  <div className="relative transform -rotate-6 hover:rotate-0 transition-transform duration-300">
+                  <div className="relative transform -rotate-6 hover:rotate-0 ">
                     <div className="w-40 h-48 sm:w-48 sm:h-56 md:w-52 md:h-60 bg-gradient-to-br from-amber-200 via-blue-400 to-blue-200 rounded-2xl shadow-2xl overflow-hidden">
                       <div className="w-full h-full bg-gradient-to-br from-primary/20 to-primary/40"></div>
                     </div>
                   </div>
-                  <div className="relative transform rotate-3 hover:rotate-0 transition-transform duration-300 mt-6">
+                  <div className="relative transform rotate-3 hover:rotate-0 mt-6">
                     <div className="w-36 h-44 sm:w-40 sm:h-52 md:w-44 md:h-56 bg-gradient-to-br from-gray-800 via-gray-600 to-gray-400 rounded-2xl shadow-2xl overflow-hidden">
                       <div className="w-full h-full bg-gradient-to-br from-foreground/60 to-foreground/30"></div>
                     </div>
@@ -273,7 +273,7 @@ const Index = () => {
 
                 {/* Right - Intro text and photo/newspaper combo */}
                 <div className="space-y-6">
-                  <div className="bg-background/80 backdrop-blur-sm p-8 rounded-xl">
+                  <div className="bg-background/80 backdrop-blur-sm p-6 m-8 rounded-xl">
                     <p className="text-sm sm:text-base md:text-lg leading-relaxed">
                       <span className="font-bold">Ronit Ranjan</span> is an Emotional Fitness Coach & Leadership
                       Trainer, Entrepreneur, 5X TEDx speaker, and Ex-Indian Army Cadet
@@ -294,29 +294,50 @@ const Index = () => {
                 </div>
               </div>
 
-              {/* Row 2 - Youngest person achievement and credentials */}
+              {/* Row 2 - Youngest person achievement and badges */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12 lg:mb-16 items-center">
-                <div className="order-2 lg:order-1 space-y-6">
-                  <p className="text-base sm:text-lg md:text-xl leading-relaxed">
+                <div className="order-2 lg:order-1">
+                  <p className="text-base sm:text-lg md:text-xl leading-relaxed mb-6">
                     He's the <span className="font-bold text-primary text-xl sm:text-2xl">youngest person</span> in the
                     world to walk from Kanyakumari to Kashmir.
                   </p>
 
-                  {/* Certifications Image */}
-                  <div className="w-full max-w-md">
-                    <div className="w-full h-48 bg-gradient-to-br from-primary/20 to-primary/40 rounded-xl shadow-lg"></div>
+                  {/* Badge pills */}
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    <span className="px-4 py-2 bg-foreground text-background rounded-full text-xs sm:text-sm font-medium shadow-md">
+                      Mindfulness
+                    </span>
+                    <span className="px-4 py-2 bg-foreground text-background rounded-full text-xs sm:text-sm font-medium shadow-md">
+                      Emotional Intelligence
+                    </span>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-5 py-2.5 bg-amber-400 text-foreground rounded-full text-sm sm:text-base font-bold shadow-lg flex items-center gap-2">
+                      🏆 CERTIFICATIONS
+                    </span>
+                    <span className="px-4 py-2 bg-foreground text-background rounded-full text-xs sm:text-sm font-medium shadow-md">
+                      NLP
+                    </span>
+                    <span className="px-4 py-2 bg-foreground text-background rounded-full text-xs sm:text-sm font-medium shadow-md">
+                      Behavioral Psychology
+                    </span>
                   </div>
                 </div>
 
-                <div className="order-1 lg:order-2">
-                  <div className="bg-card border border-border p-6 sm:p-8 rounded-2xl shadow-card">
-                    <p className="text-base sm:text-lg md:text-xl leading-relaxed">
-                      He has more than{" "}
-                      <span className="font-bold text-primary text-xl sm:text-2xl">15 credentials under his belt</span>,
-                      and has been mentored by the giants like{" "}
-                      <span className="font-bold">Jack Canfield, Tony Robbins, and Vikram Dhar</span>.
-                    </p>
-                  </div>
+                <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+                  {/* Placeholder for credentials visual */}
+                </div>
+              </div>
+
+              {/* Row 3 - Credentials text centered */}
+              <div className="mb-12 lg:mb-16 max-w-3xl mx-auto text-center">
+                <div className="bg-card border border-border p-6 sm:p-8 rounded-2xl shadow-card">
+                  <p className="text-base sm:text-lg md:text-xl leading-relaxed">
+                    He has more than{" "}
+                    <span className="font-bold text-primary text-xl sm:text-2xl">15 credentials under his belt</span>,
+                    and has been mentored by the giants like{" "}
+                    <span className="font-bold">Jack Canfield, Tony Robbins, and Vikram Dhar</span>.
+                  </p>
                 </div>
               </div>
 
