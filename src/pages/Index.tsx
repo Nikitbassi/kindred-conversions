@@ -124,15 +124,104 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Solution Section */}
-      <section className="py-12 sm:py-16 md:py-20">
+      {/* Here's Everything Inside Section */}
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-background via-background to-primary/5">
         <div className="container mx-auto px-4 sm:px-6">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
-              Enter The <span className="text-primary">Mustang Inner Circle</span>
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-12 sm:mb-16 text-center">
+              Here's everything <span className="text-primary">INSIDE</span> 🎁
             </h2>
-            <p className="text-lg sm:text-xl text-muted-foreground mb-6 sm:mb-8">A community of people who refuse to settle. We're building better versions of ourselves - together.</p>
-            <p className="text-base sm:text-lg">No BS. No surface level talks. Just real support, proven frameworks, and a community that has your back.</p>
+
+            <div className="grid md:grid-cols-2 gap-6 sm:gap-8 mb-10 sm:mb-12">
+              {/* Left Column - 5 Core Courses */}
+              <div className="bg-gradient-card border border-border rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-card hover:shadow-glow transition-all">
+                <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-center md:text-left">
+                  5 Core Courses - Watch Anytime, Own Forever
+                </h3>
+                <div className="space-y-4 sm:space-y-5">
+                  <div className="flex gap-3 sm:gap-4 items-start group">
+                    <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary/10 flex items-center justify-center text-lg sm:text-xl group-hover:bg-primary/20 transition-colors">
+                      🧠
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-sm sm:text-base mb-1">Mindset Framework</h4>
+                      <p className="text-xs sm:text-sm text-muted-foreground">rewire limiting beliefs into empowering ones</p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-3 sm:gap-4 items-start group">
+                    <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary/10 flex items-center justify-center text-lg sm:text-xl group-hover:bg-primary/20 transition-colors">
+                      ⚡
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-sm sm:text-base mb-1">Emotional Foundations</h4>
+                      <p className="text-xs sm:text-sm text-muted-foreground">understand and regulate your inner world</p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-3 sm:gap-4 items-start group">
+                    <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary/10 flex items-center justify-center text-lg sm:text-xl group-hover:bg-primary/20 transition-colors">
+                      💪
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-sm sm:text-base mb-1">Health Fundamentals</h4>
+                      <p className="text-xs sm:text-sm text-muted-foreground">energy, habits, and resilience for daily life</p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-3 sm:gap-4 items-start group">
+                    <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary/10 flex items-center justify-center text-lg sm:text-xl group-hover:bg-primary/20 transition-colors">
+                      💰
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-sm sm:text-base mb-1">Money Blueprint</h4>
+                      <p className="text-xs sm:text-sm text-muted-foreground">psychology of money, spending, and growth</p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-3 sm:gap-4 items-start group">
+                    <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary/10 flex items-center justify-center text-lg sm:text-xl group-hover:bg-primary/20 transition-colors">
+                      ❤️
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-sm sm:text-base mb-1">Relationship Essentials</h4>
+                      <p className="text-xs sm:text-sm text-muted-foreground">build healthier, stronger connections</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right Column - Additional Benefits */}
+              <div className="space-y-3 sm:space-y-4">
+                {[
+                  'Certificate Of Completion',
+                  'Community Lifetime Access',
+                  '50+ Worksheets & Exercises',
+                  'Access to Monthly Live QA',
+                  'City Meetup Access',
+                  'Reward for top performer up to 10k',
+                  "Ronit's Exclusive Ebook - Becoming Irresistible"
+                ].map((benefit, index) => (
+                  <div 
+                    key={index}
+                    className="bg-background border border-border rounded-lg sm:rounded-xl p-4 sm:p-5 text-center font-medium text-sm sm:text-base hover:border-primary/50 hover:bg-primary/5 transition-all hover:scale-[1.02] cursor-default shadow-sm"
+                  >
+                    {benefit}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* CTA Button */}
+            <div className="text-center">
+              <Button 
+                size="lg" 
+                className="text-base sm:text-lg md:text-xl px-8 sm:px-12 md:px-16 py-5 sm:py-6 md:py-7 bg-gradient-accent shadow-glow hover:scale-105 transition-transform font-bold w-full sm:w-auto"
+                onClick={handleJoinNow}
+              >
+                CHOOSE YOURSELF NOW ✨
+              </Button>
+            </div>
           </div>
         </div>
       </section>
