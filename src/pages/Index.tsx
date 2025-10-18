@@ -294,10 +294,10 @@ const Index = () => {
                 </div>
               </div>
 
-              {/* Row 2 - Youngest person achievement and badges */}
+              {/* Row 2 - Youngest person achievement and credentials */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12 lg:mb-16 items-center">
-                <div className="order-2 lg:order-1">
-                  <p className="text-base sm:text-lg md:text-xl leading-relaxed mb-6">
+                <div className="order-2 lg:order-1 space-y-6">
+                  <p className="text-base sm:text-lg md:text-xl leading-relaxed">
                     He's the <span className="font-bold text-primary text-xl sm:text-2xl">youngest person</span> in the
                     world to walk from Kanyakumari to Kashmir.
                   </p>
@@ -308,20 +308,15 @@ const Index = () => {
                   </div>
                 </div>
 
-                <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
-                  {/* Placeholder for credentials visual */}
-                </div>
-              </div>
-
-              {/* Row 3 - Credentials text centered */}
-              <div className="mb-12 lg:mb-16 max-w-3xl mx-auto text-center">
-                <div className="bg-card border border-border p-6 sm:p-8 rounded-2xl shadow-card">
-                  <p className="text-base sm:text-lg md:text-xl leading-relaxed">
-                    He has more than{" "}
-                    <span className="font-bold text-primary text-xl sm:text-2xl">15 credentials under his belt</span>,
-                    and has been mentored by the giants like{" "}
-                    <span className="font-bold">Jack Canfield, Tony Robbins, and Vikram Dhar</span>.
-                  </p>
+                <div className="order-1 lg:order-2">
+                  <div className="bg-card border border-border p-6 sm:p-8 rounded-2xl shadow-card">
+                    <p className="text-base sm:text-lg md:text-xl leading-relaxed">
+                      He has more than{" "}
+                      <span className="font-bold text-primary text-xl sm:text-2xl">15 credentials under his belt</span>,
+                      and has been mentored by the giants like{" "}
+                      <span className="font-bold">Jack Canfield, Tony Robbins, and Vikram Dhar</span>.
+                    </p>
+                  </div>
                 </div>
               </div>
 
