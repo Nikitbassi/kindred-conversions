@@ -226,6 +226,55 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Who Is This For Section */}
+      <section className="py-16 sm:py-20 md:py-24 bg-gradient-to-br from-background via-primary/5 to-background relative overflow-hidden">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+              {/* Left - Text Content */}
+              <div className="space-y-6 sm:space-y-8">
+                <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">
+                  <span className="text-primary">Who</span> Is This For?
+                </h2>
+                
+                <ul className="space-y-4 sm:space-y-6 text-base sm:text-lg md:text-xl">
+                  <li className="flex gap-3 sm:gap-4">
+                    <span className="text-primary text-xl sm:text-2xl mt-1 flex-shrink-0">•</span>
+                    <span>
+                      Working Professionals, Students, Entrepreneurs, and individuals who want to change their present life into something much more fulfilling.
+                    </span>
+                  </li>
+                  <li className="flex gap-3 sm:gap-4">
+                    <span className="text-primary text-xl sm:text-2xl mt-1 flex-shrink-0">•</span>
+                    <span>
+                      Anyone above seeking a <strong className="font-bold">powerful, exclusive community</strong> of like-minded individuals to push their growth.
+                    </span>
+                  </li>
+                  <li className="flex gap-3 sm:gap-4">
+                    <span className="text-primary text-xl sm:text-2xl mt-1 flex-shrink-0">•</span>
+                    <span>
+                      Beginners, Intermediates, or Specialists in life - this program is suitable for all of you.
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Right - Image */}
+              <div className="relative">
+                <div className="relative transform hover:scale-[1.02] transition-transform duration-500">
+                  <div className="absolute inset-0 bg-gradient-accent rounded-3xl blur-2xl opacity-20 animate-pulse"></div>
+                  <img 
+                    src="/src/assets/community-group.png"
+                    alt="Community group huddle showing diverse individuals coming together in unity"
+                    className="relative w-full h-auto rounded-3xl shadow-2xl border-4 border-primary/20"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Who Am I AKA MUSTANG Section */}
       <section className="py-16 sm:py-20 md:py-24 bg-background relative overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6">
