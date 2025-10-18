@@ -270,12 +270,12 @@ const Index = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12 lg:mb-16 items-start">
                 {/* Left - Two tilted photos */}
                 <div className="flex justify-center lg:justify-start gap-4 relative">
-                  <div className="relative transform -rotate-6 hover:rotate-0 transition-transform duration-300">
+                  <div className="relative transition-transform duration-300">
                     <div className="w-40 h-48 sm:w-48 sm:h-56 md:w-52 md:h-60 bg-gradient-to-br from-amber-200 via-blue-400 to-blue-200 rounded-2xl shadow-2xl overflow-hidden">
                       <div className="w-full h-full bg-gradient-to-br from-primary/20 to-primary/40"></div>
                     </div>
                   </div>
-                  <div className="relative transform rotate-3 hover:rotate-0 transition-transform duration-300 mt-6">
+                  <div className="relative transition-transform duration-300 mt-6">
                     <div className="w-36 h-44 sm:w-40 sm:h-52 md:w-44 md:h-56 bg-gradient-to-br from-gray-800 via-gray-600 to-gray-400 rounded-2xl shadow-2xl overflow-hidden">
                       <div className="w-full h-full bg-gradient-to-br from-foreground/60 to-foreground/30"></div>
                     </div>
@@ -293,10 +293,10 @@ const Index = () => {
 
                   {/* Photo and newspaper clipping tilted */}
                   <div className="flex justify-end gap-3 relative -mt-4">
-                    <div className="relative transform rotate-2 hover:rotate-0 transition-transform duration-300">
+                    <div className="relative transition-transform duration-300">
                       <div className="w-40 h-48 sm:w-44 sm:h-52 md:w-48 md:h-56 bg-gradient-to-br from-gray-700 via-gray-500 to-gray-300 rounded-2xl shadow-2xl"></div>
                     </div>
-                    <div className="relative transform -rotate-3 hover:rotate-0 transition-transform duration-300 -mt-8">
+                    <div className="relative transition-transform duration-300 -mt-8">
                       <div className="w-44 h-52 sm:w-48 sm:h-56 md:w-52 md:h-60 bg-white rounded-xl shadow-2xl p-2 overflow-hidden">
                         <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg"></div>
                       </div>
@@ -364,7 +364,7 @@ const Index = () => {
               {/* Row 5 - Air Marshal commendation with photo */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12 lg:mb-16 items-center">
                 <div className="flex justify-center lg:justify-start">
-                  <div className="relative transform -rotate-2 hover:rotate-0 transition-transform duration-300">
+                  <div className="relative transition-transform duration-300">
                     <div className="w-44 h-52 sm:w-48 sm:h-56 md:w-52 md:h-60 bg-gradient-to-br from-green-900 via-green-700 to-green-500 rounded-2xl shadow-2xl overflow-hidden">
                       <div className="w-full h-full bg-gradient-to-br from-primary/30 to-primary/50"></div>
                     </div>
@@ -400,12 +400,12 @@ const Index = () => {
 
                 {/* Bottom right photos */}
                 <div className="order-1 lg:order-2 flex justify-center lg:justify-end gap-3">
-                  <div className="relative transform rotate-6 hover:rotate-0 transition-transform duration-300">
+                  <div className="relative transition-transform duration-300">
                     <div className="w-36 h-44 sm:w-40 sm:h-48 md:w-44 md:h-52 bg-gradient-to-br from-pink-400 via-pink-300 to-pink-200 rounded-2xl shadow-2xl overflow-hidden">
                       <div className="w-full h-full bg-gradient-to-br from-primary/40 to-primary/20"></div>
                     </div>
                   </div>
-                  <div className="relative transform -rotate-3 hover:rotate-0 transition-transform duration-300 mt-8">
+                  <div className="relative transition-transform duration-300 mt-8">
                     <div className="w-32 h-40 sm:w-36 sm:h-44 md:w-40 md:h-48 bg-gradient-to-br from-orange-400 via-orange-300 to-orange-200 rounded-2xl shadow-2xl overflow-hidden">
                       <div className="w-full h-full bg-gradient-to-br from-primary/30 to-primary/10"></div>
                     </div>
