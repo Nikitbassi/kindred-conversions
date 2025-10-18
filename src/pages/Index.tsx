@@ -324,7 +324,7 @@ const Index = () => {
                   </div>
 
                   {/* Photo and newspaper clipping tilted */}
-                  <div className="flex justify-end gap-3 relative -mt-4">
+                  <div className="flex justify-end gap-1 relative -mt-4">
                     <div className="relative transform rotate-2">
                       <div className="w-40 h-48 sm:w-44 sm:h-52 md:w-48 md:h-56 bg-gradient-to-br from-gray-700 via-gray-500 to-gray-300 rounded-2xl shadow-2xl"></div>
                     </div>
