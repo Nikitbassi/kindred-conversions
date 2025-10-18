@@ -85,33 +85,47 @@ const Index = () => {
               By the end of the Mustang Inner Circle, you'll experience deep internal shifts -
             </p>
 
-            <div className="max-w-2xl mx-auto space-y-3 sm:space-y-4 mb-8 sm:mb-12">
-              {[
-                'Emotional Pattern Clarity',
-                'Powerful Self-Expression',
-                'Money & Visibility Empowerment',
-                'Nervous System Regulation',
-                'Unshakeable Inner Authority',
-                'Personal Leadership Code',
-                'Healed Relationship Patterns',
-                'Purpose-Work Alignment',
-                'Lifelong Growth Community'
-              ].map((item, index) => (
-                <div 
-                  key={index}
-                  className="bg-background/50 backdrop-blur-sm border border-border rounded-lg sm:rounded-xl p-4 sm:p-5 shadow-sm hover:shadow-md transition-all hover:border-primary/40 group"
-                >
-                  <div className="flex items-center gap-3 sm:gap-4">
-                    <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                      <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-primary animate-pulse" />
+            <div className="max-w-2xl mx-auto relative">
+              {/* Connecting vertical line */}
+              <div className="absolute left-5 sm:left-6 top-6 bottom-6 w-0.5 bg-gradient-to-b from-primary/40 via-primary/60 to-primary/40"></div>
+              
+              <div className="space-y-6 sm:space-y-8 relative">
+                {[
+                  'Emotional Pattern Clarity',
+                  'Powerful Self-Expression',
+                  'Money & Visibility Empowerment',
+                  'Nervous System Regulation',
+                  'Unshakeable Inner Authority',
+                  'Personal Leadership Code',
+                  'Healed Relationship Patterns',
+                  'Purpose-Work Alignment',
+                  'Lifelong Growth Community'
+                ].map((item, index) => (
+                  <div 
+                    key={index}
+                    className="flex items-center gap-4 sm:gap-5 opacity-0 animate-fade-in"
+                    style={{ 
+                      animationDelay: `${index * 0.15}s`,
+                      animationFillMode: 'forwards'
+                    }}
+                  >
+                    {/* Dot */}
+                    <div className="relative z-10 flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary flex items-center justify-center shadow-lg ring-4 ring-background group-hover:scale-110 transition-transform">
+                      <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-background" />
                     </div>
-                    <p className="text-sm sm:text-base md:text-lg font-medium text-foreground">
-                      {item}
-                    </p>
+                    
+                    {/* Text */}
+                    <div className="flex-1 bg-background/50 backdrop-blur-sm border border-border rounded-lg sm:rounded-xl p-4 sm:p-5 shadow-sm hover:shadow-md transition-all hover:border-primary/40 hover:translate-x-2">
+                      <p className="text-sm sm:text-base md:text-lg font-medium text-foreground">
+                        {item}
+                      </p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
+
+            <div className="mb-8 sm:mb-12"></div>
 
             <div className="text-center max-w-2xl mx-auto">
               <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
