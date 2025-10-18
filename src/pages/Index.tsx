@@ -216,7 +216,7 @@ const Index = () => {
                 ].map((benefit, index) => (
                   <div 
                     key={index}
-                    className="bg-background border border-border rounded-lg sm:rounded-xl p-4 sm:p-5 text-center font-medium text-sm sm:text-base hover:border-primary/50 hover:bg-primary/5 transition-all hover:scale-[1.02] cursor-default shadow-sm"
+                    className="bg-background border border-border rounded-lg sm:rounded-xl p-4 sm:p-5 text-center font-medium text-sm sm:text-base hover:border-primary/50 hover:bg-primary/5 transition-all hover:scale-[1.02] cursor-default shadow-glow"
                   >
                     {benefit}
                   </div>
