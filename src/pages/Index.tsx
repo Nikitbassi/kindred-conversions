@@ -302,25 +302,9 @@ const Index = () => {
                     world to walk from Kanyakumari to Kashmir.
                   </p>
 
-                  {/* Badge pills */}
-                  <div className="flex flex-wrap gap-2 mb-3">
-                    <span className="px-4 py-2 bg-foreground text-background rounded-full text-xs sm:text-sm font-medium shadow-md">
-                      Mindfulness
-                    </span>
-                    <span className="px-4 py-2 bg-foreground text-background rounded-full text-xs sm:text-sm font-medium shadow-md">
-                      Emotional Intelligence
-                    </span>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-5 py-2.5 bg-amber-400 text-foreground rounded-full text-sm sm:text-base font-bold shadow-lg flex items-center gap-2">
-                      🏆 CERTIFICATIONS
-                    </span>
-                    <span className="px-4 py-2 bg-foreground text-background rounded-full text-xs sm:text-sm font-medium shadow-md">
-                      NLP
-                    </span>
-                    <span className="px-4 py-2 bg-foreground text-background rounded-full text-xs sm:text-sm font-medium shadow-md">
-                      Behavioral Psychology
-                    </span>
+                  {/* Certifications Image */}
+                  <div className="w-full max-w-md">
+                    <div className="w-full h-48 bg-gradient-to-br from-primary/20 to-primary/40 rounded-xl shadow-lg"></div>
                   </div>
                 </div>
 
