@@ -316,7 +316,7 @@ const Index = () => {
                 </div>
 
                 {/* Right - Intro text and photo/newspaper combo */}
-                <div className="space-y-6">
+                <div className="space-y-6 mt-8">
                   <div className="bg-background/80 backdrop-blur-sm p-6 rounded-xl">
                     <p className="text-sm sm:text-base md:text-lg leading-relaxed">
                       <span className="font-bold">Ronit Ranjan</span> is an Emotional Fitness Coach & Leadership Trainer, Entrepreneur, 5X TEDx speaker, and Ex-Indian Army Cadet
