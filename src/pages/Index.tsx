@@ -138,64 +138,54 @@ const Index = () => {
                 <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-center md:text-left">
                   5 Core Courses - Watch Anytime, Own Forever
                 </h3>
-                <div className="relative">
-                  {/* Connecting Line */}
-                  <div className="absolute left-4 sm:left-5 top-8 bottom-8 w-0.5 bg-gradient-to-b from-primary/40 via-primary/60 to-primary/40"></div>
-                  
-                  <div className="space-y-8 sm:space-y-10 relative">
-                    {/* Item 1 */}
-                    <div className="flex gap-3 sm:gap-4 items-start group opacity-0 animate-fade-in" style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}>
-                      <div className="relative z-10 flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary flex items-center justify-center text-lg sm:text-xl shadow-lg ring-4 ring-background group-hover:scale-110 transition-transform">
-                        🧠
-                      </div>
-                      <div className="flex-1 pt-1">
-                        <h4 className="font-semibold text-sm sm:text-base mb-1">Mindset Framework</h4>
-                        <p className="text-xs sm:text-sm text-muted-foreground">rewire limiting beliefs into empowering ones</p>
-                      </div>
+                <div className="space-y-4 sm:space-y-5">
+                  <div className="flex gap-3 sm:gap-4 items-start group">
+                    <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary/10 flex items-center justify-center text-lg sm:text-xl group-hover:bg-primary/20 transition-colors">
+                      🧠
                     </div>
-
-                    {/* Item 2 */}
-                    <div className="flex gap-3 sm:gap-4 items-start group opacity-0 animate-fade-in" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>
-                      <div className="relative z-10 flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary flex items-center justify-center text-lg sm:text-xl shadow-lg ring-4 ring-background group-hover:scale-110 transition-transform">
-                        ⚡
-                      </div>
-                      <div className="flex-1 pt-1">
-                        <h4 className="font-semibold text-sm sm:text-base mb-1">Emotional Foundations</h4>
-                        <p className="text-xs sm:text-sm text-muted-foreground">understand and regulate your inner world</p>
-                      </div>
+                    <div>
+                      <h4 className="font-semibold text-sm sm:text-base mb-1">Mindset Framework</h4>
+                      <p className="text-xs sm:text-sm text-muted-foreground">rewire limiting beliefs into empowering ones</p>
                     </div>
+                  </div>
 
-                    {/* Item 3 */}
-                    <div className="flex gap-3 sm:gap-4 items-start group opacity-0 animate-fade-in" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>
-                      <div className="relative z-10 flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary flex items-center justify-center text-lg sm:text-xl shadow-lg ring-4 ring-background group-hover:scale-110 transition-transform">
-                        💪
-                      </div>
-                      <div className="flex-1 pt-1">
-                        <h4 className="font-semibold text-sm sm:text-base mb-1">Health Fundamentals</h4>
-                        <p className="text-xs sm:text-sm text-muted-foreground">energy, habits, and resilience for daily life</p>
-                      </div>
+                  <div className="flex gap-3 sm:gap-4 items-start group">
+                    <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary/10 flex items-center justify-center text-lg sm:text-xl group-hover:bg-primary/20 transition-colors">
+                      ⚡
                     </div>
-
-                    {/* Item 4 */}
-                    <div className="flex gap-3 sm:gap-4 items-start group opacity-0 animate-fade-in" style={{ animationDelay: '0.7s', animationFillMode: 'forwards' }}>
-                      <div className="relative z-10 flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary flex items-center justify-center text-lg sm:text-xl shadow-lg ring-4 ring-background group-hover:scale-110 transition-transform">
-                        💰
-                      </div>
-                      <div className="flex-1 pt-1">
-                        <h4 className="font-semibold text-sm sm:text-base mb-1">Money Blueprint</h4>
-                        <p className="text-xs sm:text-sm text-muted-foreground">psychology of money, spending, and growth</p>
-                      </div>
+                    <div>
+                      <h4 className="font-semibold text-sm sm:text-base mb-1">Emotional Foundations</h4>
+                      <p className="text-xs sm:text-sm text-muted-foreground">understand and regulate your inner world</p>
                     </div>
+                  </div>
 
-                    {/* Item 5 */}
-                    <div className="flex gap-3 sm:gap-4 items-start group opacity-0 animate-fade-in" style={{ animationDelay: '0.9s', animationFillMode: 'forwards' }}>
-                      <div className="relative z-10 flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary flex items-center justify-center text-lg sm:text-xl shadow-lg ring-4 ring-background group-hover:scale-110 transition-transform">
-                        ❤️
-                      </div>
-                      <div className="flex-1 pt-1">
-                        <h4 className="font-semibold text-sm sm:text-base mb-1">Relationship Essentials</h4>
-                        <p className="text-xs sm:text-sm text-muted-foreground">build healthier, stronger connections</p>
-                      </div>
+                  <div className="flex gap-3 sm:gap-4 items-start group">
+                    <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary/10 flex items-center justify-center text-lg sm:text-xl group-hover:bg-primary/20 transition-colors">
+                      💪
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-sm sm:text-base mb-1">Health Fundamentals</h4>
+                      <p className="text-xs sm:text-sm text-muted-foreground">energy, habits, and resilience for daily life</p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-3 sm:gap-4 items-start group">
+                    <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary/10 flex items-center justify-center text-lg sm:text-xl group-hover:bg-primary/20 transition-colors">
+                      💰
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-sm sm:text-base mb-1">Money Blueprint</h4>
+                      <p className="text-xs sm:text-sm text-muted-foreground">psychology of money, spending, and growth</p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-3 sm:gap-4 items-start group">
+                    <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary/10 flex items-center justify-center text-lg sm:text-xl group-hover:bg-primary/20 transition-colors">
+                      ❤️
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-sm sm:text-base mb-1">Relationship Essentials</h4>
+                      <p className="text-xs sm:text-sm text-muted-foreground">build healthier, stronger connections</p>
                     </div>
                   </div>
                 </div>
