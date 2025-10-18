@@ -227,114 +227,171 @@ const Index = () => {
       </section>
 
       {/* Who Am I AKA MUSTANG Section */}
-      <section className="py-16 sm:py-20 md:py-24 bg-background overflow-hidden">
+      <section className="py-16 sm:py-20 md:py-24 bg-background relative overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-12 sm:mb-16 md:mb-20 text-center">
-              WHO AM I <span className="italic">AKA</span> <span className="text-primary">MUSTANG</span>?
+            {/* Title */}
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-16 sm:mb-20 md:mb-24 text-center">
+              WHO AM I <span className="italic font-normal">AKA</span> <span className="text-primary">MUSTANG</span>?
             </h2>
 
-            {/* Creative Asymmetric Layout */}
-            <div className="relative min-h-[800px] sm:min-h-[1000px] md:min-h-[1200px]">
-              {/* Top Left - Photo Cards */}
-              <div className="absolute top-0 left-0 sm:left-10 md:left-20 flex gap-3 transform -rotate-3 hover:rotate-0 transition-transform duration-300">
-                <div className="w-32 h-40 sm:w-40 sm:h-48 md:w-48 md:h-56 bg-gradient-to-br from-primary/20 to-primary/10 rounded-xl shadow-lg border-4 border-background"></div>
-                <div className="w-32 h-40 sm:w-40 sm:h-48 md:w-48 md:h-56 bg-gradient-to-br from-primary/10 to-primary/5 rounded-xl shadow-lg border-4 border-background mt-8"></div>
-              </div>
-
-              {/* Top Right - Intro Text */}
-              <div className="absolute top-0 right-4 sm:right-10 md:right-20 max-w-xs sm:max-w-sm md:max-w-md">
-                <p className="text-xs sm:text-sm md:text-base leading-relaxed bg-card p-4 sm:p-5 md:p-6 rounded-xl shadow-card border border-border">
-                  <span className="font-semibold">Ronit Ranjan</span> is an Emotional Fitness Coach & Leadership Trainer, Entrepreneur, 5X TEDx speaker, and Ex-Indian Army Cadet
-                </p>
-              </div>
-
-              {/* Middle Left - Achievement Text */}
-              <div className="absolute top-32 sm:top-40 md:top-48 left-4 sm:left-16 md:left-32 max-w-xs sm:max-w-sm">
-                <p className="text-sm sm:text-base md:text-lg leading-relaxed">
-                  He's the <span className="font-bold text-primary">youngest person</span> in the world to walk from Kanyakumari to Kashmir.
-                </p>
-                
-                {/* Badges */}
-                <div className="flex flex-wrap gap-2 mt-4">
-                  <span className="px-3 py-1.5 bg-foreground text-background rounded-full text-xs sm:text-sm font-medium">Mindfulness</span>
-                  <span className="px-3 py-1.5 bg-foreground text-background rounded-full text-xs sm:text-sm font-medium">Emotional Intelligence</span>
+            {/* Creative Magazine-Style Layout */}
+            <div className="relative">
+              {/* Row 1 - Top section with photos and intro */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12 lg:mb-16 items-start">
+                {/* Left - Two tilted photos */}
+                <div className="flex justify-center lg:justify-start gap-4 relative">
+                  <div className="relative transform -rotate-6 hover:rotate-0 transition-transform duration-300">
+                    <div className="w-40 h-48 sm:w-48 sm:h-56 md:w-52 md:h-60 bg-gradient-to-br from-amber-200 via-blue-400 to-blue-200 rounded-2xl shadow-2xl overflow-hidden">
+                      <div className="w-full h-full bg-gradient-to-br from-primary/20 to-primary/40"></div>
+                    </div>
+                  </div>
+                  <div className="relative transform rotate-3 hover:rotate-0 transition-transform duration-300 mt-6">
+                    <div className="w-36 h-44 sm:w-40 sm:h-52 md:w-44 md:h-56 bg-gradient-to-br from-gray-800 via-gray-600 to-gray-400 rounded-2xl shadow-2xl overflow-hidden">
+                      <div className="w-full h-full bg-gradient-to-br from-foreground/60 to-foreground/30"></div>
+                    </div>
+                  </div>
                 </div>
-                <div className="flex flex-wrap gap-2 mt-2">
-                  <span className="px-4 py-2 bg-primary text-primary-foreground rounded-full text-xs sm:text-sm font-bold flex items-center gap-2">
-                    🏆 CERTIFICATIONS
-                  </span>
-                  <span className="px-3 py-1.5 bg-foreground text-background rounded-full text-xs sm:text-sm font-medium">NLP</span>
-                  <span className="px-3 py-1.5 bg-foreground text-background rounded-full text-xs sm:text-sm font-medium">Behavioral Psychology</span>
+
+                {/* Right - Intro text and photo/newspaper combo */}
+                <div className="space-y-6">
+                  <div className="bg-background/80 backdrop-blur-sm p-6 rounded-xl">
+                    <p className="text-sm sm:text-base md:text-lg leading-relaxed">
+                      <span className="font-bold">Ronit Ranjan</span> is an Emotional Fitness Coach & Leadership Trainer, Entrepreneur, 5X TEDx speaker, and Ex-Indian Army Cadet
+                    </p>
+                  </div>
+
+                  {/* Photo and newspaper clipping tilted */}
+                  <div className="flex justify-end gap-3 relative -mt-4">
+                    <div className="relative transform rotate-2 hover:rotate-0 transition-transform duration-300">
+                      <div className="w-40 h-48 sm:w-44 sm:h-52 md:w-48 md:h-56 bg-gradient-to-br from-gray-700 via-gray-500 to-gray-300 rounded-2xl shadow-2xl"></div>
+                    </div>
+                    <div className="relative transform -rotate-3 hover:rotate-0 transition-transform duration-300 -mt-8">
+                      <div className="w-44 h-52 sm:w-48 sm:h-56 md:w-52 md:h-60 bg-white rounded-xl shadow-2xl p-2 overflow-hidden">
+                        <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg"></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              {/* Middle Right - Photo Cards */}
-              <div className="absolute top-40 sm:top-52 md:top-64 right-0 sm:right-8 md:right-16 flex gap-3 transform rotate-6 hover:rotate-0 transition-transform duration-300">
-                <div className="w-36 h-44 sm:w-44 sm:h-52 md:w-52 md:h-60 bg-gradient-to-br from-primary/15 to-primary/5 rounded-xl shadow-lg border-4 border-background"></div>
-                <div className="w-28 h-36 sm:w-32 sm:h-40 md:w-40 md:h-48 bg-gradient-to-br from-primary/10 to-primary/5 rounded-xl shadow-lg border-4 border-background -mt-4"></div>
+              {/* Row 2 - Youngest person achievement and badges */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12 lg:mb-16 items-center">
+                <div className="order-2 lg:order-1">
+                  <p className="text-base sm:text-lg md:text-xl leading-relaxed mb-6">
+                    He's the <span className="font-bold text-primary text-xl sm:text-2xl">youngest person</span> in the world to walk from Kanyakumari to Kashmir.
+                  </p>
+
+                  {/* Badge pills */}
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    <span className="px-4 py-2 bg-foreground text-background rounded-full text-xs sm:text-sm font-medium shadow-md">
+                      Mindfulness
+                    </span>
+                    <span className="px-4 py-2 bg-foreground text-background rounded-full text-xs sm:text-sm font-medium shadow-md">
+                      Emotional Intelligence
+                    </span>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-5 py-2.5 bg-amber-400 text-foreground rounded-full text-sm sm:text-base font-bold shadow-lg flex items-center gap-2">
+                      🏆 CERTIFICATIONS
+                    </span>
+                    <span className="px-4 py-2 bg-foreground text-background rounded-full text-xs sm:text-sm font-medium shadow-md">
+                      NLP
+                    </span>
+                    <span className="px-4 py-2 bg-foreground text-background rounded-full text-xs sm:text-sm font-medium shadow-md">
+                      Behavioral Psychology
+                    </span>
+                  </div>
+                </div>
+
+                <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+                  {/* Placeholder for credentials visual */}
+                </div>
               </div>
 
-              {/* Center - Credentials */}
-              <div className="absolute top-72 sm:top-80 md:top-96 left-1/2 -translate-x-1/2 max-w-sm sm:max-w-md md:max-w-lg">
-                <div className="bg-card p-4 sm:p-5 md:p-6 rounded-xl shadow-card border border-border">
-                  <p className="text-xs sm:text-sm md:text-base leading-relaxed">
-                    He has more than <span className="font-bold text-primary">15 credentials under his belt</span>, and has been mentored by the giants like <span className="font-semibold">Jack Canfield, Tony Robbins, and Vikram Dhar</span>.
+              {/* Row 3 - Credentials text centered */}
+              <div className="mb-12 lg:mb-16 max-w-3xl mx-auto text-center">
+                <div className="bg-card border border-border p-6 sm:p-8 rounded-2xl shadow-card">
+                  <p className="text-base sm:text-lg md:text-xl leading-relaxed">
+                    He has more than <span className="font-bold text-primary text-xl sm:text-2xl">15 credentials under his belt</span>, and has been mentored by the giants like <span className="font-bold">Jack Canfield, Tony Robbins, and Vikram Dhar</span>.
                   </p>
                 </div>
               </div>
 
-              {/* Lower Left - Featured In */}
-              <div className="absolute top-[500px] sm:top-[560px] md:top-[640px] left-4 sm:left-10 md:left-20 max-w-xs sm:max-w-sm">
-                <p className="text-xs sm:text-sm md:text-base leading-relaxed mb-4">
-                  He has been featured by G-20, European Commission, Amazon Prime, The Hindu, The Indian Express, Zee Network, Times of India, TEDx, Brut, Humans of Bombay, The Quint, and many more.
-                </p>
-                
-                {/* Company Logos */}
-                <div className="flex flex-wrap items-center gap-4 sm:gap-6 bg-card p-4 rounded-xl border border-border">
-                  <div className="text-lg sm:text-xl md:text-2xl font-bold opacity-60">✈️</div>
-                  <div className="text-base sm:text-lg md:text-xl font-bold text-primary">prime video</div>
-                  <div className="text-base sm:text-lg md:text-xl font-bold opacity-60">SIEMENS</div>
-                  <div className="text-base sm:text-lg md:text-xl font-bold text-primary">TED<sup className="text-xs">x</sup></div>
+              {/* Row 4 - Featured in and logos */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12 lg:mb-16 items-center">
+                <div>
+                  <p className="text-sm sm:text-base md:text-lg leading-relaxed mb-6">
+                    He has been featured by G-20, European Commission, Amazon Prime, The Hindu, The Indian Express, Zee Network, Times of India, TEDx, Brut, Humans of Bombay, The Quint, and many more.
+                  </p>
+                </div>
+
+                {/* Company Logos Card */}
+                <div className="flex justify-center lg:justify-end">
+                  <div className="bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 p-6 sm:p-8 rounded-2xl shadow-2xl border border-border/50 transform hover:scale-105 transition-transform duration-300">
+                    <div className="grid grid-cols-2 gap-6 items-center">
+                      <div className="flex items-center justify-center text-4xl opacity-70">✈️</div>
+                      <div className="flex items-center justify-center">
+                        <span className="text-blue-500 font-bold text-lg sm:text-xl">prime</span>
+                        <span className="text-blue-500 font-bold text-lg sm:text-xl"> video</span>
+                      </div>
+                      <div className="flex items-center justify-center text-gray-600 dark:text-gray-300 font-bold text-xl sm:text-2xl">
+                        SIEMENS
+                      </div>
+                      <div className="flex items-center justify-center">
+                        <span className="text-primary font-bold text-2xl sm:text-3xl">TED</span>
+                        <sup className="text-primary font-bold text-sm">x</sup>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              {/* Lower Center - Photo */}
-              <div className="absolute top-[520px] sm:top-[600px] md:top-[680px] left-1/2 -translate-x-1/2 transform -rotate-2 hover:rotate-0 transition-transform duration-300">
-                <div className="w-40 h-48 sm:w-48 sm:h-56 md:w-56 md:h-64 bg-gradient-to-br from-primary/20 to-primary/10 rounded-xl shadow-lg border-4 border-background"></div>
-              </div>
+              {/* Row 5 - Air Marshal commendation with photo */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12 lg:mb-16 items-center">
+                <div className="flex justify-center lg:justify-start">
+                  <div className="relative transform -rotate-2 hover:rotate-0 transition-transform duration-300">
+                    <div className="w-44 h-52 sm:w-48 sm:h-56 md:w-52 md:h-60 bg-gradient-to-br from-green-900 via-green-700 to-green-500 rounded-2xl shadow-2xl overflow-hidden">
+                      <div className="w-full h-full bg-gradient-to-br from-primary/30 to-primary/50"></div>
+                    </div>
+                  </div>
+                </div>
 
-              {/* Lower Right - Air Force Commendation */}
-              <div className="absolute top-[580px] sm:top-[660px] md:top-[740px] right-4 sm:right-10 md:right-20 max-w-xs sm:max-w-sm">
-                <div className="bg-card p-4 sm:p-5 rounded-xl shadow-card border border-border">
-                  <p className="text-xs sm:text-sm md:text-base leading-relaxed">
-                    He has been commended by <span className="font-bold">Air Marshal JS Kler, Indian Air Force</span>
+                <div className="bg-card border border-border p-6 sm:p-8 rounded-2xl shadow-card">
+                  <p className="text-base sm:text-lg md:text-xl leading-relaxed">
+                    He has been commended by <span className="font-bold text-primary">Air Marshal JS Kler, Indian Air Force</span>
                   </p>
                 </div>
               </div>
 
-              {/* Bottom Left - Hobby Photos */}
-              <div className="absolute bottom-0 left-4 sm:left-16 md:left-24 flex gap-2 transform rotate-3 hover:rotate-0 transition-transform duration-300">
-                <div className="w-24 h-28 sm:w-28 sm:h-32 md:w-32 md:h-36 bg-gradient-to-br from-primary/10 to-primary/5 rounded-xl shadow-lg border-4 border-background"></div>
-                <div className="w-24 h-28 sm:w-28 sm:h-32 md:w-32 md:h-36 bg-gradient-to-br from-primary/15 to-primary/5 rounded-xl shadow-lg border-4 border-background -mt-2"></div>
-              </div>
-
-              {/* Bottom Center - Personal Info */}
-              <div className="absolute bottom-8 sm:bottom-12 left-1/2 -translate-x-1/2 max-w-xs sm:max-w-sm md:max-w-md">
-                <div className="bg-card p-4 sm:p-5 md:p-6 rounded-xl shadow-card border border-border">
-                  <p className="text-xs sm:text-sm md:text-base leading-relaxed mb-3">
-                    In his free time, he hunts for the best Chole Bhature in town, writes poetry, and kicks patriarchy's ass.
-                  </p>
-                  <p className="text-xs sm:text-sm md:text-base italic font-medium text-muted-foreground">
-                    He says, <span className="text-foreground">"You can take a soldier out of the army but not the army out of the soldier."</span>
-                  </p>
+              {/* Row 6 - Personal hobbies and quote */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-end">
+                <div className="order-2 lg:order-1">
+                  <div className="space-y-4">
+                    <p className="text-sm sm:text-base md:text-lg leading-relaxed">
+                      In his free time, he hunts for the best Chole Bhature in town, writes poetry, and kicks patriarchy's ass.
+                    </p>
+                    <div className="bg-muted/50 p-5 rounded-xl border-l-4 border-primary">
+                      <p className="text-sm sm:text-base md:text-lg italic">
+                        He says, <span className="font-semibold text-foreground">"You can take a soldier out of the army but not the army out of the soldier."</span>
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </div>
 
-              {/* Bottom Right - Photos */}
-              <div className="absolute bottom-4 sm:bottom-8 right-0 sm:right-4 md:right-12 flex gap-2 transform -rotate-6 hover:rotate-0 transition-transform duration-300">
-                <div className="w-28 h-36 sm:w-32 sm:h-40 md:w-40 md:h-48 bg-gradient-to-br from-primary/15 to-primary/10 rounded-xl shadow-lg border-4 border-background"></div>
-                <div className="w-24 h-32 sm:w-28 sm:h-36 md:w-32 md:h-40 bg-gradient-to-br from-primary/10 to-primary/5 rounded-xl shadow-lg border-4 border-background mt-4"></div>
+                {/* Bottom right photos */}
+                <div className="order-1 lg:order-2 flex justify-center lg:justify-end gap-3">
+                  <div className="relative transform rotate-6 hover:rotate-0 transition-transform duration-300">
+                    <div className="w-36 h-44 sm:w-40 sm:h-48 md:w-44 md:h-52 bg-gradient-to-br from-pink-400 via-pink-300 to-pink-200 rounded-2xl shadow-2xl overflow-hidden">
+                      <div className="w-full h-full bg-gradient-to-br from-primary/40 to-primary/20"></div>
+                    </div>
+                  </div>
+                  <div className="relative transform -rotate-3 hover:rotate-0 transition-transform duration-300 mt-8">
+                    <div className="w-32 h-40 sm:w-36 sm:h-44 md:w-40 md:h-48 bg-gradient-to-br from-orange-400 via-orange-300 to-orange-200 rounded-2xl shadow-2xl overflow-hidden">
+                      <div className="w-full h-full bg-gradient-to-br from-primary/30 to-primary/10"></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
