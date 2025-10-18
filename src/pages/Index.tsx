@@ -253,19 +253,19 @@ const Index = () => {
                 <ul className="space-y-4 sm:space-y-6 text-base sm:text-lg md:text-xl">
                   <li className="flex gap-3 sm:gap-4">
                     <span className="text-primary text-xl sm:text-2xl mt-1 flex-shrink-0">•</span>
-                    <div className="bg-card border border-border rounded-xl p-4 sm:p-6 shadow-glow">
+                    <div className="bg-card border border-border rounded-xl p-4 sm:p-6">
                       Working Professionals, Students, Entrepreneurs, and individuals who want to change their present life into something much more fulfilling.
                     </div>
                   </li>
                   <li className="flex gap-3 sm:gap-4">
                     <span className="text-primary text-xl sm:text-2xl mt-1 flex-shrink-0">•</span>
-                    <div className="bg-card border border-border rounded-xl p-4 sm:p-6 shadow-glow">
+                    <div className="bg-card border border-border rounded-xl p-4 sm:p-6">
                       Anyone above seeking a <strong className="font-bold">powerful, exclusive community</strong> of like-minded individuals to push their growth.
                     </div>
                   </li>
                   <li className="flex gap-3 sm:gap-4">
                     <span className="text-primary text-xl sm:text-2xl mt-1 flex-shrink-0">•</span>
-                    <div className="bg-card border border-border rounded-xl p-4 sm:p-6 shadow-glow">
+                    <div className="bg-card border border-border rounded-xl p-4 sm:p-6">
                       Beginners, Intermediates, or Specialists in life - this program is suitable for all of you.
                     </div>
                   </li>
