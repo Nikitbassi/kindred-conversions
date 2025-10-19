@@ -271,7 +271,7 @@ const Index = () => {
             {/* Creative Magazine-Style Layout */}
             <div className="relative">
               {/* Row 1 - Top section with photos and intro */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12 lg:mb-16 items-start">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12 lg:mb-16 items-center">
                 {/* Left - Two tilted photos */}
                 <div className="flex justify-center lg:justify-start gap-4 relative">
                   <div className="relative transform -rotate-6 hover:rotate-0 transition-transform duration-300">
