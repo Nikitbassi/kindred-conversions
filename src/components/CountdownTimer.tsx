@@ -49,17 +49,33 @@ export const CountdownTimer = ({ targetDate, variant = 'default' }: CountdownTim
   const labelStyles = variant === 'banner'
     ? "text-white"
     : "text-muted-foreground";
+    
+  const sizeStyles = variant === 'banner'
+    ? "gap-1 sm:gap-2 md:gap-3"
+    : "gap-2 sm:gap-3 md:gap-4";
+    
+  const boxSizeStyles = variant === 'banner'
+    ? "p-1.5 sm:p-2 md:p-3 min-w-[45px] sm:min-w-[55px] md:min-w-[65px]"
+    : "p-2 sm:p-3 md:p-4 min-w-[60px] sm:min-w-[70px] md:min-w-[80px]";
+    
+  const numberStyles = variant === 'banner'
+    ? "text-lg sm:text-2xl md:text-3xl"
+    : "text-2xl sm:text-3xl md:text-4xl";
+    
+  const labelSizeStyles = variant === 'banner'
+    ? "text-[10px] sm:text-xs mt-0.5 sm:mt-1"
+    : "text-xs sm:text-sm mt-1 sm:mt-2";
 
   return (
-    <div className="flex gap-2 sm:gap-3 md:gap-4 justify-center">
+    <div className={`flex ${sizeStyles} justify-center`}>
       {Object.entries(timeLeft).map(([interval, value]) => (
         <div key={interval} className="flex flex-col items-center">
-          <div className={`${boxStyles} rounded-lg p-2 sm:p-3 md:p-4 min-w-[60px] sm:min-w-[70px] md:min-w-[80px]`}>
-            <div className={`text-2xl sm:text-3xl md:text-4xl font-bold ${textStyles} tabular-nums`}>
+          <div className={`${boxStyles} ${boxSizeStyles} rounded-lg`}>
+            <div className={`${numberStyles} font-bold ${textStyles} tabular-nums`}>
               {String(value).padStart(2, '0')}
             </div>
           </div>
-          <div className={`text-xs sm:text-sm ${labelStyles} mt-1 sm:mt-2 capitalize`}>{interval}</div>
+          <div className={`${labelSizeStyles} ${labelStyles} capitalize`}>{interval}</div>
         </div>
       ))}
     </div>

@@ -50,9 +50,9 @@ const Index = () => {
         </div>
         
         {/* Timer Section */}
-        <div className="bg-gradient-hero text-white py-2 px-4">
-          <div className="max-w-3xl mx-auto flex flex-col items-center justify-center gap-2">
-            <p className="text-xs sm:text-sm md:text-base font-medium">
+        <div className="bg-gradient-hero text-white py-1.5 px-4">
+          <div className="max-w-2xl mx-auto flex flex-col items-center justify-center gap-1">
+            <p className="text-[10px] sm:text-xs md:text-sm font-medium">
               Limited time offer ends in
             </p>
             <CountdownTimer targetDate={enrollmentDeadline} variant="banner" />
