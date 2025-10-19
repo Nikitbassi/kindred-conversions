@@ -12,6 +12,7 @@ import Autoplay from "embla-carousel-autoplay";
 import testimonialVideo from "@/assets/testimonial-video.mp4";
 import mustangPhoto1 from "@/assets/mustang-photo-1.png";
 import mustangPhoto2 from "@/assets/mustang-photo-2.avif";
+import certificationsImage from "@/assets/certifications.avif";
 const Index = () => {
   // Set enrollment deadline (Oct 27th, 2025)
   const enrollmentDeadline = new Date("2025-10-27T23:59:59");
@@ -321,7 +322,9 @@ const Index = () => {
 
                   {/* Certifications Image */}
                   <div className="w-full max-w-md">
-                    <div className="w-full h-48 bg-gradient-to-br from-primary/20 to-primary/40 rounded-xl shadow-lg"></div>
+                    <div className="w-full h-48 bg-gradient-to-br from-primary/20 to-primary/40 rounded-xl shadow-lg overflow-hidden">
+                      <img src={certificationsImage} alt="Ronit Ranjan Certifications" className="w-full h-full object-cover" />
+                    </div>
                   </div>
                 </div>
 
