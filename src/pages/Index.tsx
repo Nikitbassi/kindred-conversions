@@ -40,6 +40,26 @@ const Index = () => {
   };
   return (
     <div className="min-h-screen bg-gradient-hero">
+      {/* Top Banner with Countdown */}
+      <div className="w-full">
+        {/* Red Banner */}
+        <div className="bg-red-600 text-white text-center py-3 px-4">
+          <h2 className="text-lg sm:text-xl md:text-2xl font-bold">
+            Last Agency Optimization Masterclass of the Year
+          </h2>
+        </div>
+        
+        {/* Timer Section */}
+        <div className="bg-black text-white py-4 px-4">
+          <div className="max-w-4xl mx-auto flex flex-col items-center gap-3">
+            <p className="text-sm sm:text-base md:text-lg font-medium">
+              Limited time offer ends in
+            </p>
+            <CountdownTimer targetDate={enrollmentDeadline} />
+          </div>
+        </div>
+      </div>
+      
       <FomoNotification />
 
       {/* Hero Section */}
