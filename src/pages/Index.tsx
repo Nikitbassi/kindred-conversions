@@ -274,7 +274,7 @@ const Index = () => {
                 <div className="flex justify-center lg:justify-start gap-4 relative">
                   <div className="relative transform -rotate-6 hover:rotate-0 transition-transform duration-300">
                     <div className="w-40 h-48 sm:w-48 sm:h-56 md:w-52 md:h-60 bg-gradient-to-br from-amber-200 via-blue-400 to-blue-200 rounded-2xl shadow-2xl overflow-hidden">
-                      <img src={mustangPhoto1} alt="Ronit Ranjan" className="w-full h-full object-cover" />
+                      <img src={mustangPhoto2} alt="Ronit Ranjan" className="w-full h-full object-cover" />
                     </div>
                   </div>
                   <div className="relative transform rotate-3 hover:rotate-0 transition-transform duration-300 mt-6">
@@ -372,7 +372,7 @@ const Index = () => {
                 <div className="flex justify-center lg:justify-start">
                   <div className="relative transform -rotate-2 hover:rotate-0 transition-transform duration-300">
                     <div className="w-44 h-52 sm:w-48 sm:h-56 md:w-52 md:h-60 bg-gradient-to-br from-green-900 via-green-700 to-green-500 rounded-2xl shadow-2xl overflow-hidden">
-                      <div className="w-full h-full bg-gradient-to-br from-primary/30 to-primary/50"></div>
+                      <img src={mustangPhoto2} alt="Ronit Ranjan" className="w-full h-full object-cover" />
                     </div>
                   </div>
                 </div>
@@ -408,12 +408,12 @@ const Index = () => {
                 <div className="order-1 lg:order-2 flex justify-center lg:justify-end gap-3">
                   <div className="relative transform rotate-6 hover:rotate-0 transition-transform duration-300">
                     <div className="w-36 h-44 sm:w-40 sm:h-48 md:w-44 md:h-52 bg-gradient-to-br from-pink-400 via-pink-300 to-pink-200 rounded-2xl shadow-2xl overflow-hidden">
-                      <div className="w-full h-full bg-gradient-to-br from-primary/40 to-primary/20"></div>
+                      <img src={mustangPhoto2} alt="Ronit Ranjan" className="w-full h-full object-cover" />
                     </div>
                   </div>
                   <div className="relative transform -rotate-3 hover:rotate-0 transition-transform duration-300 mt-8">
                     <div className="w-32 h-40 sm:w-36 sm:h-44 md:w-40 md:h-48 bg-gradient-to-br from-orange-400 via-orange-300 to-orange-200 rounded-2xl shadow-2xl overflow-hidden">
-                      <div className="w-full h-full bg-gradient-to-br from-primary/30 to-primary/10"></div>
+                      <img src={mustangPhoto2} alt="Ronit Ranjan" className="w-full h-full object-cover" />
                     </div>
                   </div>
                 </div>
