@@ -11,6 +11,7 @@ import { Shield, Users, TrendingUp, ArrowRight, CheckCircle2 } from "lucide-reac
 import Autoplay from "embla-carousel-autoplay";
 import testimonialVideo from "@/assets/testimonial-video.mp4";
 import mustangPhoto1 from "@/assets/mustang-photo-1.png";
+import mustangPhoto2 from "@/assets/mustang-photo-2.avif";
 const Index = () => {
   // Set enrollment deadline (Oct 27th, 2025)
   const enrollmentDeadline = new Date("2025-10-27T23:59:59");
@@ -278,7 +279,7 @@ const Index = () => {
                   </div>
                   <div className="relative transform rotate-3 hover:rotate-0 transition-transform duration-300 mt-6">
                     <div className="w-36 h-44 sm:w-40 sm:h-52 md:w-44 md:h-56 bg-gradient-to-br from-gray-800 via-gray-600 to-gray-400 rounded-2xl shadow-2xl overflow-hidden">
-                      <div className="w-full h-full bg-gradient-to-br from-foreground/60 to-foreground/30"></div>
+                      <img src={mustangPhoto2} alt="Ronit Ranjan" className="w-full h-full object-cover" />
                     </div>
                   </div>
                 </div>
@@ -295,11 +296,15 @@ const Index = () => {
                   {/* Photo and newspaper clipping tilted */}
                   <div className="flex justify-end gap-3 relative -mt-4">
                     <div className="relative transform rotate-2 hover:rotate-0 transition-transform duration-300">
-                      <div className="w-40 h-48 sm:w-44 sm:h-52 md:w-48 md:h-56 bg-gradient-to-br from-gray-700 via-gray-500 to-gray-300 rounded-2xl shadow-2xl"></div>
+                      <div className="w-40 h-48 sm:w-44 sm:h-52 md:w-48 md:h-56 bg-gradient-to-br from-gray-700 via-gray-500 to-gray-300 rounded-2xl shadow-2xl overflow-hidden">
+                        <img src={mustangPhoto2} alt="Ronit Ranjan" className="w-full h-full object-cover" />
+                      </div>
                     </div>
                     <div className="relative transform -rotate-3 hover:rotate-0 transition-transform duration-300 -mt-8">
                       <div className="w-44 h-52 sm:w-48 sm:h-56 md:w-52 md:h-60 bg-white rounded-xl shadow-2xl p-2 overflow-hidden">
-                        <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg"></div>
+                        <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg overflow-hidden">
+                          <img src={mustangPhoto2} alt="Ronit Ranjan" className="w-full h-full object-cover" />
+                        </div>
                       </div>
                     </div>
                   </div>
