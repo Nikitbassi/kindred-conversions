@@ -55,15 +55,15 @@ export const CountdownTimer = ({ targetDate, variant = 'default' }: CountdownTim
     : "gap-2 sm:gap-3 md:gap-4";
     
   const boxSizeStyles = variant === 'banner'
-    ? "p-1 sm:p-1.5 md:p-2 min-w-[35px] sm:min-w-[40px] md:min-w-[50px]"
+    ? "p-1.5 sm:p-2 md:p-2.5 min-w-[42px] sm:min-w-[48px] md:min-w-[58px]"
     : "p-2 sm:p-3 md:p-4 min-w-[60px] sm:min-w-[70px] md:min-w-[80px]";
     
   const numberStyles = variant === 'banner'
-    ? "text-sm sm:text-lg md:text-xl"
+    ? "text-base sm:text-xl md:text-2xl"
     : "text-2xl sm:text-3xl md:text-4xl";
     
   const labelSizeStyles = variant === 'banner'
-    ? "text-[8px] sm:text-[10px] mt-0.5"
+    ? "text-[9px] sm:text-[11px] mt-0.5"
     : "text-xs sm:text-sm mt-1 sm:mt-2";
 
   return (
