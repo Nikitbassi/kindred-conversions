@@ -10,6 +10,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Shield, Users, TrendingUp, ArrowRight, CheckCircle2 } from "lucide-react";
 import Autoplay from "embla-carousel-autoplay";
 import testimonialVideo from "@/assets/testimonial-video.mp4";
+import mustangPhoto1 from "@/assets/mustang-photo-1.png";
 const Index = () => {
   // Set enrollment deadline (Oct 27th, 2025)
   const enrollmentDeadline = new Date("2025-10-27T23:59:59");
@@ -272,7 +273,7 @@ const Index = () => {
                 <div className="flex justify-center lg:justify-start gap-4 relative">
                   <div className="relative transform -rotate-6 hover:rotate-0 transition-transform duration-300">
                     <div className="w-40 h-48 sm:w-48 sm:h-56 md:w-52 md:h-60 bg-gradient-to-br from-amber-200 via-blue-400 to-blue-200 rounded-2xl shadow-2xl overflow-hidden">
-                      <div className="w-full h-full bg-gradient-to-br from-primary/20 to-primary/40"></div>
+                      <img src={mustangPhoto1} alt="Ronit Ranjan" className="w-full h-full object-cover" />
                     </div>
                   </div>
                   <div className="relative transform rotate-3 hover:rotate-0 transition-transform duration-300 mt-6">
