@@ -7,7 +7,12 @@ interface TimeLeft {
   seconds: number;
 }
 
-export const CountdownTimer = ({ targetDate }: { targetDate: Date }) => {
+interface CountdownTimerProps {
+  targetDate: Date;
+  variant?: 'default' | 'banner';
+}
+
+export const CountdownTimer = ({ targetDate, variant = 'default' }: CountdownTimerProps) => {
   const calculateTimeLeft = (): TimeLeft => {
     const difference = +targetDate - +new Date();
     
@@ -33,16 +38,28 @@ export const CountdownTimer = ({ targetDate }: { targetDate: Date }) => {
     return () => clearTimeout(timer);
   });
 
+  const boxStyles = variant === 'banner' 
+    ? "bg-white border-2 border-white" 
+    : "bg-gradient-card border border-border shadow-card";
+  
+  const textStyles = variant === 'banner'
+    ? "text-black"
+    : "text-primary";
+    
+  const labelStyles = variant === 'banner'
+    ? "text-white"
+    : "text-muted-foreground";
+
   return (
     <div className="flex gap-2 sm:gap-3 md:gap-4 justify-center">
       {Object.entries(timeLeft).map(([interval, value]) => (
         <div key={interval} className="flex flex-col items-center">
-          <div className="bg-gradient-card border border-border rounded-lg p-2 sm:p-3 md:p-4 min-w-[60px] sm:min-w-[70px] md:min-w-[80px] shadow-card">
-            <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary tabular-nums">
+          <div className={`${boxStyles} rounded-lg p-2 sm:p-3 md:p-4 min-w-[60px] sm:min-w-[70px] md:min-w-[80px]`}>
+            <div className={`text-2xl sm:text-3xl md:text-4xl font-bold ${textStyles} tabular-nums`}>
               {String(value).padStart(2, '0')}
             </div>
           </div>
-          <div className="text-xs sm:text-sm text-muted-foreground mt-1 sm:mt-2 capitalize">{interval}</div>
+          <div className={`text-xs sm:text-sm ${labelStyles} mt-1 sm:mt-2 capitalize`}>{interval}</div>
         </div>
       ))}
     </div>

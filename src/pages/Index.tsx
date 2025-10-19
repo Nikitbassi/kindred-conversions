@@ -51,11 +51,11 @@ const Index = () => {
         
         {/* Timer Section */}
         <div className="bg-black text-white py-4 px-4">
-          <div className="max-w-4xl mx-auto flex flex-col items-center gap-3">
+          <div className="max-w-4xl mx-auto flex flex-col items-center justify-center gap-3">
             <p className="text-sm sm:text-base md:text-lg font-medium">
               Limited time offer ends in
             </p>
-            <CountdownTimer targetDate={enrollmentDeadline} />
+            <CountdownTimer targetDate={enrollmentDeadline} variant="banner" />
           </div>
         </div>
       </div>
