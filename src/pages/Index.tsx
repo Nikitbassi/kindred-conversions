@@ -10,7 +10,6 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Shield, Users, TrendingUp, ArrowRight, CheckCircle2 } from "lucide-react";
 import Autoplay from "embla-carousel-autoplay";
 import testimonialVideo from "@/assets/testimonial-video.mp4";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 const Index = () => {
   // Set enrollment deadline (Oct 27th, 2025)
   const enrollmentDeadline = new Date("2025-10-27T23:59:59");
@@ -271,12 +270,12 @@ const Index = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12 lg:mb-16 items-start">
                 {/* Left - Two tilted photos */}
                 <div className="flex justify-center lg:justify-start gap-4 relative">
-                  <div className="relative transition-transform duration-300">
+                  <div className="relative transform -rotate-6 hover:rotate-0 transition-transform duration-300">
                     <div className="w-40 h-48 sm:w-48 sm:h-56 md:w-52 md:h-60 bg-gradient-to-br from-amber-200 via-blue-400 to-blue-200 rounded-2xl shadow-2xl overflow-hidden">
                       <div className="w-full h-full bg-gradient-to-br from-primary/20 to-primary/40"></div>
                     </div>
                   </div>
-                  <div className="relative transition-transform duration-300 mt-6">
+                  <div className="relative transform rotate-3 hover:rotate-0 transition-transform duration-300 mt-6">
                     <div className="w-36 h-44 sm:w-40 sm:h-52 md:w-44 md:h-56 bg-gradient-to-br from-gray-800 via-gray-600 to-gray-400 rounded-2xl shadow-2xl overflow-hidden">
                       <div className="w-full h-full bg-gradient-to-br from-foreground/60 to-foreground/30"></div>
                     </div>
@@ -294,10 +293,10 @@ const Index = () => {
 
                   {/* Photo and newspaper clipping tilted */}
                   <div className="flex justify-end gap-3 relative -mt-4">
-                    <div className="relative transition-transform duration-300">
+                    <div className="relative transform rotate-2 hover:rotate-0 transition-transform duration-300">
                       <div className="w-40 h-48 sm:w-44 sm:h-52 md:w-48 md:h-56 bg-gradient-to-br from-gray-700 via-gray-500 to-gray-300 rounded-2xl shadow-2xl"></div>
                     </div>
-                    <div className="relative transition-transform duration-300 -mt-8">
+                    <div className="relative transform -rotate-3 hover:rotate-0 transition-transform duration-300 -mt-8">
                       <div className="w-44 h-52 sm:w-48 sm:h-56 md:w-52 md:h-60 bg-white rounded-xl shadow-2xl p-2 overflow-hidden">
                         <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg"></div>
                       </div>
@@ -365,7 +364,7 @@ const Index = () => {
               {/* Row 5 - Air Marshal commendation with photo */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12 lg:mb-16 items-center">
                 <div className="flex justify-center lg:justify-start">
-                  <div className="relative transition-transform duration-300">
+                  <div className="relative transform -rotate-2 hover:rotate-0 transition-transform duration-300">
                     <div className="w-44 h-52 sm:w-48 sm:h-56 md:w-52 md:h-60 bg-gradient-to-br from-green-900 via-green-700 to-green-500 rounded-2xl shadow-2xl overflow-hidden">
                       <div className="w-full h-full bg-gradient-to-br from-primary/30 to-primary/50"></div>
                     </div>
@@ -401,12 +400,12 @@ const Index = () => {
 
                 {/* Bottom right photos */}
                 <div className="order-1 lg:order-2 flex justify-center lg:justify-end gap-3">
-                  <div className="relative transition-transform duration-300">
+                  <div className="relative transform rotate-6 hover:rotate-0 transition-transform duration-300">
                     <div className="w-36 h-44 sm:w-40 sm:h-48 md:w-44 md:h-52 bg-gradient-to-br from-pink-400 via-pink-300 to-pink-200 rounded-2xl shadow-2xl overflow-hidden">
                       <div className="w-full h-full bg-gradient-to-br from-primary/40 to-primary/20"></div>
                     </div>
                   </div>
-                  <div className="relative transition-transform duration-300 mt-8">
+                  <div className="relative transform -rotate-3 hover:rotate-0 transition-transform duration-300 mt-8">
                     <div className="w-32 h-40 sm:w-36 sm:h-44 md:w-40 md:h-48 bg-gradient-to-br from-orange-400 via-orange-300 to-orange-200 rounded-2xl shadow-2xl overflow-hidden">
                       <div className="w-full h-full bg-gradient-to-br from-primary/30 to-primary/10"></div>
                     </div>
@@ -774,132 +773,6 @@ const Index = () => {
             </Button>
 
             <p className="text-xs sm:text-sm text-muted-foreground">Questions? Email us at contact@ronitranjan.com</p>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-background">
-        <div className="container mx-auto px-4 sm:px-6">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-12 text-center">FAQs</h2>
-            
-            <Accordion type="single" collapsible className="space-y-4">
-              <AccordionItem value="item-1" className="bg-card rounded-lg px-6 border border-border">
-                <AccordionTrigger className="text-left text-base sm:text-lg font-semibold hover:no-underline">
-                  When are the sessions held?
-                </AccordionTrigger>
-                <AccordionContent className="text-sm sm:text-base text-muted-foreground pt-4 space-y-4">
-                  <p>
-                    <span className="font-semibold text-foreground">5 Core Sessions with me –</span> These are <span className="font-semibold">pre-recorded videos directly by Ronit</span> so that you can pace it at your convenience. We have received amazing feedback on the videos.
-                  </p>
-                  <p>
-                    It's designed this way to help you <span className="font-semibold">stay consistent and not feel burnt out</span>.
-                  </p>
-                  <p>
-                    You may ask - <span className="italic">"But Ronit, I wanted all the sessions to be live. Can't we have that?"</span>
-                    <br />
-                    I hear you, but let's be real-
-                    <br />
-                    In a group of hundreds of <span className="font-semibold">working professionals across time zones</span>, is live every week the best bet? Or are we unintentionally disregarding the realities of people's work, family, and energy?
-                  </p>
-                  <p>
-                    This format gives you <span className="font-semibold">freedom with structure</span>, so you don't miss the growth just because you missed the clock.
-                  </p>
-                  <p>
-                    Everything is built to <span className="font-semibold">fit real life</span>, not fight it.
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-2" className="bg-card rounded-lg px-6 border border-border">
-                <AccordionTrigger className="text-left text-base sm:text-lg font-semibold hover:no-underline">
-                  What if I miss a session?
-                </AccordionTrigger>
-                <AccordionContent className="text-sm sm:text-base text-muted-foreground pt-4">
-                  <p>
-                    All sessions are pre-recorded, so you can watch them at your own pace. You won't miss out on anything - everything is available for you to access whenever you need it.
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-3" className="bg-card rounded-lg px-6 border border-border">
-                <AccordionTrigger className="text-left text-base sm:text-lg font-semibold hover:no-underline">
-                  Will there be worksheets or material to work on?
-                </AccordionTrigger>
-                <AccordionContent className="text-sm sm:text-base text-muted-foreground pt-4">
-                  <p>
-                    Yes! Each session comes with actionable worksheets and materials to help you implement what you learn and track your progress.
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-4" className="bg-card rounded-lg px-6 border border-border">
-                <AccordionTrigger className="text-left text-base sm:text-lg font-semibold hover:no-underline">
-                  Is there a support community?
-                </AccordionTrigger>
-                <AccordionContent className="text-sm sm:text-base text-muted-foreground pt-4">
-                  <p>
-                    Absolutely! You'll get access to our private community where you can connect with other members, share your journey, and get support from both peers and mentors.
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-5" className="bg-card rounded-lg px-6 border border-border">
-                <AccordionTrigger className="text-left text-base sm:text-lg font-semibold hover:no-underline">
-                  What happens after the 12 weeks?
-                </AccordionTrigger>
-                <AccordionContent className="text-sm sm:text-base text-muted-foreground pt-4">
-                  <p>
-                    You'll have lifetime access to all the course materials, and you'll continue to be part of the community. The transformation doesn't end after 12 weeks - it's just the beginning.
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-6" className="bg-card rounded-lg px-6 border border-border">
-                <AccordionTrigger className="text-left text-base sm:text-lg font-semibold hover:no-underline">
-                  What if it doesn't work for me?
-                </AccordionTrigger>
-                <AccordionContent className="text-sm sm:text-base text-muted-foreground pt-4">
-                  <p>
-                    We offer a 100% money-back guarantee. If you put in the work and don't see results, we'll refund your investment - no questions asked.
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-7" className="bg-card rounded-lg px-6 border border-border">
-                <AccordionTrigger className="text-left text-base sm:text-lg font-semibold hover:no-underline">
-                  Who is this really for?
-                </AccordionTrigger>
-                <AccordionContent className="text-sm sm:text-base text-muted-foreground pt-4">
-                  <p>
-                    This is for men who are tired of feeling stuck, unfulfilled, or like they're just going through the motions. If you're ready to take control of your life, career, and relationships - this is for you.
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-8" className="bg-card rounded-lg px-6 border border-border">
-                <AccordionTrigger className="text-left text-base sm:text-lg font-semibold hover:no-underline">
-                  What's the cost?
-                </AccordionTrigger>
-                <AccordionContent className="text-sm sm:text-base text-muted-foreground pt-4">
-                  <p>
-                    Click the "Join Now" button to see the current investment. We offer flexible payment options to make this accessible for everyone committed to their growth.
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-9" className="bg-card rounded-lg px-6 border border-border">
-                <AccordionTrigger className="text-left text-base sm:text-lg font-semibold hover:no-underline">
-                  I'm in a different timezone, or I might miss the Sunday sessions because of work. What then?
-                </AccordionTrigger>
-                <AccordionContent className="text-sm sm:text-base text-muted-foreground pt-4">
-                  <p>
-                    That's exactly why we've designed the program with pre-recorded sessions. You can watch them at your convenience, fitting them into your schedule without stress. The format is built for real life.
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
           </div>
         </div>
       </section>
