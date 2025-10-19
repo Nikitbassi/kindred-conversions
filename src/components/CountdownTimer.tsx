@@ -51,19 +51,19 @@ export const CountdownTimer = ({ targetDate, variant = 'default' }: CountdownTim
     : "text-muted-foreground";
     
   const sizeStyles = variant === 'banner'
-    ? "gap-1 sm:gap-2 md:gap-3"
+    ? "gap-1 sm:gap-1.5 md:gap-2"
     : "gap-2 sm:gap-3 md:gap-4";
     
   const boxSizeStyles = variant === 'banner'
-    ? "p-1.5 sm:p-2 md:p-3 min-w-[45px] sm:min-w-[55px] md:min-w-[65px]"
+    ? "p-1 sm:p-1.5 md:p-2 min-w-[35px] sm:min-w-[40px] md:min-w-[50px]"
     : "p-2 sm:p-3 md:p-4 min-w-[60px] sm:min-w-[70px] md:min-w-[80px]";
     
   const numberStyles = variant === 'banner'
-    ? "text-lg sm:text-2xl md:text-3xl"
+    ? "text-sm sm:text-lg md:text-xl"
     : "text-2xl sm:text-3xl md:text-4xl";
     
   const labelSizeStyles = variant === 'banner'
-    ? "text-[10px] sm:text-xs mt-0.5 sm:mt-1"
+    ? "text-[8px] sm:text-[10px] mt-0.5"
     : "text-xs sm:text-sm mt-1 sm:mt-2";
 
   return (
