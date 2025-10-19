@@ -13,6 +13,7 @@ import testimonialVideo from "@/assets/testimonial-video.mp4";
 import mustangPhoto1 from "@/assets/mustang-photo-1.png";
 import mustangPhoto2 from "@/assets/mustang-photo-2.avif";
 import certificationsImage from "@/assets/certifications.avif";
+import companyLogos from "@/assets/company-logos.avif";
 const Index = () => {
   // Set enrollment deadline (Oct 27th, 2025)
   const enrollmentDeadline = new Date("2025-10-27T23:59:59");
@@ -351,21 +352,8 @@ const Index = () => {
 
                 {/* Company Logos Card */}
                 <div className="flex justify-center lg:justify-end">
-                  <div className="bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 p-6 sm:p-8 rounded-2xl shadow-2xl border border-border/50 transform hover:scale-105 transition-transform duration-300">
-                    <div className="grid grid-cols-2 gap-6 items-center">
-                      <div className="flex items-center justify-center text-4xl opacity-70">✈️</div>
-                      <div className="flex items-center justify-center">
-                        <span className="text-blue-500 font-bold text-lg sm:text-xl">prime</span>
-                        <span className="text-blue-500 font-bold text-lg sm:text-xl"> video</span>
-                      </div>
-                      <div className="flex items-center justify-center text-gray-600 dark:text-gray-300 font-bold text-xl sm:text-2xl">
-                        SIEMENS
-                      </div>
-                      <div className="flex items-center justify-center">
-                        <span className="text-primary font-bold text-2xl sm:text-3xl">TED</span>
-                        <sup className="text-primary font-bold text-sm">x</sup>
-                      </div>
-                    </div>
+                  <div className="bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 p-6 sm:p-8 rounded-2xl shadow-2xl border border-border/50 transform hover:scale-105 transition-transform duration-300 overflow-hidden">
+                    <img src={companyLogos} alt="Featured Companies and Media" className="w-full h-full object-contain" />
                   </div>
                 </div>
               </div>
